@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Surname>Иванов</Surname>
+  <Name>Иван</Name>
+  <Patronymic>Иванович</Patronymic>
+  <Gender>Мужской</Gender>
+  <BirthDate>2002-05-01T00:00:00</BirthDate>
+  <CivilStatus>Не женат/Не замужем</CivilStatus>
+  <AdInfo>Студент</AdInfo>
+</Person>
