@@ -67,7 +67,7 @@ namespace Calculator
             if (BorderRadius > 2)
             {
                 using (GraphicsPath surfacePath = GetFigurePath(rectSurface, BorderRadius))
-                using (Pen surfacePen = new Pen(Parent.BackColor, 2))
+                using (Pen surfacePen = new Pen(Parent.BackColor, smoothSize))
                 {
                     pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
