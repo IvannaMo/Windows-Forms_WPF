@@ -1,0 +1,11 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\bin\Debug\Clock.exe.config
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\bin\Debug\Clock.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\bin\Debug\Clock.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\obj\Debug\Clock.csproj.AssemblyReference.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\obj\Debug\Clock.csproj.SuggestedBindingRedirects.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\obj\Debug\Clock.Form.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\obj\Debug\Clock.Properties.Resources.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\obj\Debug\Clock.csproj.GenerateResource.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\obj\Debug\Clock.csproj.CoreCompileInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\obj\Debug\Clock.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Homework\Clock\Clock\obj\Debug\Clock.pdb
