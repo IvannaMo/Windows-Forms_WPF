@@ -1,0 +1,11 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.AssemblyReference.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms\Classwork\3\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form.resources
