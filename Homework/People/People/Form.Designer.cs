@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.backgroundCstmPnl = new CustomControls.CustomPanel();
+            this.peopleInfoCstmPnl = new CustomControls.CustomPanel();
+            this.searchCstmBttn = new CustomControls.CustomButton();
+            this.searchCstmTxtBx = new CustomControls.CustomTextBox();
             this.peopleInputCstmPnl = new CustomControls.CustomPanel();
+            this.ageLbl = new System.Windows.Forms.Label();
+            this.nameLbl = new System.Windows.Forms.Label();
+            this.showAllCstmBttn = new CustomControls.CustomButton();
+            this.saveCstmBttn = new CustomControls.CustomButton();
             this.ageCstmTxtBx = new CustomControls.CustomTextBox();
             this.nameCstmTxtBx = new CustomControls.CustomTextBox();
             this.minimizeClosePnl = new System.Windows.Forms.Panel();
             this.closePctrBx = new System.Windows.Forms.PictureBox();
             this.minimizePctrBx = new System.Windows.Forms.PictureBox();
             this.cstmDrgCntrl = new CustomControls.CustomDragControl();
-            this.saveCstmBttn = new CustomControls.CustomButton();
-            this.showAllCstmBttn = new CustomControls.CustomButton();
-            this.peopleInfoCstmPnl = new CustomControls.CustomPanel();
-            this.searchCstmTxtBx = new CustomControls.CustomTextBox();
-            this.searchCstmBttn = new CustomControls.CustomButton();
-            this.nameLbl = new System.Windows.Forms.Label();
-            this.ageLbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.peopleInfoTxtBx = new System.Windows.Forms.RichTextBox();
             this.backgroundCstmPnl.SuspendLayout();
+            this.peopleInfoCstmPnl.SuspendLayout();
             this.peopleInputCstmPnl.SuspendLayout();
             this.minimizeClosePnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.closePctrBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizePctrBx)).BeginInit();
-            this.peopleInfoCstmPnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // backgroundCstmPnl
@@ -68,6 +68,67 @@
             this.backgroundCstmPnl.Size = new System.Drawing.Size(890, 624);
             this.backgroundCstmPnl.TabIndex = 0;
             this.backgroundCstmPnl.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(32)))), ((int)(((byte)(87)))));
+            // 
+            // peopleInfoCstmPnl
+            // 
+            this.peopleInfoCstmPnl.Angle = 0F;
+            this.peopleInfoCstmPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(54)))));
+            this.peopleInfoCstmPnl.BorderColor = System.Drawing.Color.Gray;
+            this.peopleInfoCstmPnl.BorderRadius = 25;
+            this.peopleInfoCstmPnl.BorderSize = 0;
+            this.peopleInfoCstmPnl.BottomColor = System.Drawing.Color.Empty;
+            this.peopleInfoCstmPnl.Controls.Add(this.peopleInfoTxtBx);
+            this.peopleInfoCstmPnl.Controls.Add(this.searchCstmBttn);
+            this.peopleInfoCstmPnl.Controls.Add(this.searchCstmTxtBx);
+            this.peopleInfoCstmPnl.Location = new System.Drawing.Point(422, 48);
+            this.peopleInfoCstmPnl.Name = "peopleInfoCstmPnl";
+            this.peopleInfoCstmPnl.Size = new System.Drawing.Size(440, 528);
+            this.peopleInfoCstmPnl.TabIndex = 2;
+            this.peopleInfoCstmPnl.TopColor = System.Drawing.Color.Empty;
+            // 
+            // searchCstmBttn
+            // 
+            this.searchCstmBttn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(132)))), ((int)(((byte)(244)))));
+            this.searchCstmBttn.BorderColor = System.Drawing.Color.Gray;
+            this.searchCstmBttn.BorderRadius = 19;
+            this.searchCstmBttn.BorderSize = 0;
+            this.searchCstmBttn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchCstmBttn.FlatAppearance.BorderSize = 0;
+            this.searchCstmBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchCstmBttn.ForeColor = System.Drawing.Color.White;
+            this.searchCstmBttn.Location = new System.Drawing.Point(313, 446);
+            this.searchCstmBttn.Name = "searchCstmBttn";
+            this.searchCstmBttn.Size = new System.Drawing.Size(92, 38);
+            this.searchCstmBttn.TabIndex = 4;
+            this.searchCstmBttn.Text = "Search";
+            this.searchCstmBttn.UseVisualStyleBackColor = false;
+            this.searchCstmBttn.Click += new System.EventHandler(this.searchCstmBttn_Click);
+            // 
+            // searchCstmTxtBx
+            // 
+            this.searchCstmTxtBx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(33)))), ((int)(((byte)(83)))));
+            this.searchCstmTxtBx.BorderColor = System.Drawing.SystemColors.ControlDark;
+            this.searchCstmTxtBx.BorderFocusColor = System.Drawing.Color.Empty;
+            this.searchCstmTxtBx.BorderRadius = 15;
+            this.searchCstmTxtBx.BorderSize = 0;
+            this.searchCstmTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.searchCstmTxtBx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(143)))), ((int)(((byte)(188)))));
+            this.searchCstmTxtBx.Location = new System.Drawing.Point(35, 446);
+            this.searchCstmTxtBx.Margin = new System.Windows.Forms.Padding(4);
+            this.searchCstmTxtBx.MaxLength = 32767;
+            this.searchCstmTxtBx.Multiline = false;
+            this.searchCstmTxtBx.Name = "searchCstmTxtBx";
+            this.searchCstmTxtBx.PaddingLeft = 15;
+            this.searchCstmTxtBx.PaddingTop = 4;
+            this.searchCstmTxtBx.PasswordChar = false;
+            this.searchCstmTxtBx.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.searchCstmTxtBx.PlaceholderText = "";
+            this.searchCstmTxtBx.SelectionLength = 0;
+            this.searchCstmTxtBx.SelectionStart = 0;
+            this.searchCstmTxtBx.Size = new System.Drawing.Size(258, 38);
+            this.searchCstmTxtBx.TabIndex = 1;
+            this.searchCstmTxtBx.Texts = "";
+            this.searchCstmTxtBx.UnderlinedStyle = false;
             // 
             // peopleInputCstmPnl
             // 
@@ -88,6 +149,62 @@
             this.peopleInputCstmPnl.Size = new System.Drawing.Size(370, 288);
             this.peopleInputCstmPnl.TabIndex = 1;
             this.peopleInputCstmPnl.TopColor = System.Drawing.Color.Empty;
+            // 
+            // ageLbl
+            // 
+            this.ageLbl.AutoSize = true;
+            this.ageLbl.ForeColor = System.Drawing.Color.White;
+            this.ageLbl.Location = new System.Drawing.Point(26, 95);
+            this.ageLbl.Name = "ageLbl";
+            this.ageLbl.Size = new System.Drawing.Size(35, 16);
+            this.ageLbl.TabIndex = 5;
+            this.ageLbl.Text = "Age:";
+            // 
+            // nameLbl
+            // 
+            this.nameLbl.AutoSize = true;
+            this.nameLbl.ForeColor = System.Drawing.Color.White;
+            this.nameLbl.Location = new System.Drawing.Point(26, 38);
+            this.nameLbl.Name = "nameLbl";
+            this.nameLbl.Size = new System.Drawing.Size(47, 16);
+            this.nameLbl.TabIndex = 4;
+            this.nameLbl.Text = "Name:";
+            // 
+            // showAllCstmBttn
+            // 
+            this.showAllCstmBttn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(132)))), ((int)(((byte)(244)))));
+            this.showAllCstmBttn.BorderColor = System.Drawing.Color.Gray;
+            this.showAllCstmBttn.BorderRadius = 25;
+            this.showAllCstmBttn.BorderSize = 0;
+            this.showAllCstmBttn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.showAllCstmBttn.FlatAppearance.BorderSize = 0;
+            this.showAllCstmBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showAllCstmBttn.ForeColor = System.Drawing.Color.White;
+            this.showAllCstmBttn.Location = new System.Drawing.Point(192, 193);
+            this.showAllCstmBttn.Name = "showAllCstmBttn";
+            this.showAllCstmBttn.Size = new System.Drawing.Size(143, 51);
+            this.showAllCstmBttn.TabIndex = 3;
+            this.showAllCstmBttn.Text = "Show All";
+            this.showAllCstmBttn.UseVisualStyleBackColor = false;
+            this.showAllCstmBttn.Click += new System.EventHandler(this.showAllCstmBttn_Click);
+            // 
+            // saveCstmBttn
+            // 
+            this.saveCstmBttn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(137)))), ((int)(((byte)(241)))));
+            this.saveCstmBttn.BorderColor = System.Drawing.Color.Gray;
+            this.saveCstmBttn.BorderRadius = 25;
+            this.saveCstmBttn.BorderSize = 0;
+            this.saveCstmBttn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.saveCstmBttn.FlatAppearance.BorderSize = 0;
+            this.saveCstmBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveCstmBttn.ForeColor = System.Drawing.Color.White;
+            this.saveCstmBttn.Location = new System.Drawing.Point(35, 193);
+            this.saveCstmBttn.Name = "saveCstmBttn";
+            this.saveCstmBttn.Size = new System.Drawing.Size(132, 51);
+            this.saveCstmBttn.TabIndex = 2;
+            this.saveCstmBttn.Text = "Save";
+            this.saveCstmBttn.UseVisualStyleBackColor = false;
+            this.saveCstmBttn.Click += new System.EventHandler(this.saveCstmBttn_Click);
             // 
             // ageCstmTxtBx
             // 
@@ -177,133 +294,16 @@
             // 
             this.cstmDrgCntrl.SelectControl = this.minimizeClosePnl;
             // 
-            // saveCstmBttn
+            // peopleInfoTxtBx
             // 
-            this.saveCstmBttn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(137)))), ((int)(((byte)(241)))));
-            this.saveCstmBttn.BorderColor = System.Drawing.Color.Gray;
-            this.saveCstmBttn.BorderRadius = 25;
-            this.saveCstmBttn.BorderSize = 0;
-            this.saveCstmBttn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.saveCstmBttn.FlatAppearance.BorderSize = 0;
-            this.saveCstmBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveCstmBttn.ForeColor = System.Drawing.Color.White;
-            this.saveCstmBttn.Location = new System.Drawing.Point(35, 193);
-            this.saveCstmBttn.Name = "saveCstmBttn";
-            this.saveCstmBttn.Size = new System.Drawing.Size(132, 51);
-            this.saveCstmBttn.TabIndex = 2;
-            this.saveCstmBttn.Text = "Save";
-            this.saveCstmBttn.UseVisualStyleBackColor = false;
-            this.saveCstmBttn.Click += new System.EventHandler(this.saveCstmBttn_Click);
-            // 
-            // showAllCstmBttn
-            // 
-            this.showAllCstmBttn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(132)))), ((int)(((byte)(244)))));
-            this.showAllCstmBttn.BorderColor = System.Drawing.Color.Gray;
-            this.showAllCstmBttn.BorderRadius = 25;
-            this.showAllCstmBttn.BorderSize = 0;
-            this.showAllCstmBttn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.showAllCstmBttn.FlatAppearance.BorderSize = 0;
-            this.showAllCstmBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showAllCstmBttn.ForeColor = System.Drawing.Color.White;
-            this.showAllCstmBttn.Location = new System.Drawing.Point(192, 193);
-            this.showAllCstmBttn.Name = "showAllCstmBttn";
-            this.showAllCstmBttn.Size = new System.Drawing.Size(143, 51);
-            this.showAllCstmBttn.TabIndex = 3;
-            this.showAllCstmBttn.Text = "Show All";
-            this.showAllCstmBttn.UseVisualStyleBackColor = false;
-            this.showAllCstmBttn.Click += new System.EventHandler(this.showAllCstmBttn_Click);
-            // 
-            // peopleInfoCstmPnl
-            // 
-            this.peopleInfoCstmPnl.Angle = 0F;
-            this.peopleInfoCstmPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(54)))));
-            this.peopleInfoCstmPnl.BorderColor = System.Drawing.Color.Gray;
-            this.peopleInfoCstmPnl.BorderRadius = 25;
-            this.peopleInfoCstmPnl.BorderSize = 0;
-            this.peopleInfoCstmPnl.BottomColor = System.Drawing.Color.Empty;
-            this.peopleInfoCstmPnl.Controls.Add(this.textBox1);
-            this.peopleInfoCstmPnl.Controls.Add(this.searchCstmBttn);
-            this.peopleInfoCstmPnl.Controls.Add(this.searchCstmTxtBx);
-            this.peopleInfoCstmPnl.Location = new System.Drawing.Point(422, 48);
-            this.peopleInfoCstmPnl.Name = "peopleInfoCstmPnl";
-            this.peopleInfoCstmPnl.Size = new System.Drawing.Size(440, 528);
-            this.peopleInfoCstmPnl.TabIndex = 2;
-            this.peopleInfoCstmPnl.TopColor = System.Drawing.Color.Empty;
-            // 
-            // searchCstmTxtBx
-            // 
-            this.searchCstmTxtBx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(33)))), ((int)(((byte)(83)))));
-            this.searchCstmTxtBx.BorderColor = System.Drawing.SystemColors.ControlDark;
-            this.searchCstmTxtBx.BorderFocusColor = System.Drawing.Color.Empty;
-            this.searchCstmTxtBx.BorderRadius = 15;
-            this.searchCstmTxtBx.BorderSize = 0;
-            this.searchCstmTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.searchCstmTxtBx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(143)))), ((int)(((byte)(188)))));
-            this.searchCstmTxtBx.Location = new System.Drawing.Point(35, 446);
-            this.searchCstmTxtBx.Margin = new System.Windows.Forms.Padding(4);
-            this.searchCstmTxtBx.MaxLength = 32767;
-            this.searchCstmTxtBx.Multiline = false;
-            this.searchCstmTxtBx.Name = "searchCstmTxtBx";
-            this.searchCstmTxtBx.PaddingLeft = 15;
-            this.searchCstmTxtBx.PaddingTop = 4;
-            this.searchCstmTxtBx.PasswordChar = false;
-            this.searchCstmTxtBx.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.searchCstmTxtBx.PlaceholderText = "";
-            this.searchCstmTxtBx.SelectionLength = 0;
-            this.searchCstmTxtBx.SelectionStart = 0;
-            this.searchCstmTxtBx.Size = new System.Drawing.Size(258, 38);
-            this.searchCstmTxtBx.TabIndex = 1;
-            this.searchCstmTxtBx.Texts = "";
-            this.searchCstmTxtBx.UnderlinedStyle = false;
-            // 
-            // searchCstmBttn
-            // 
-            this.searchCstmBttn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(132)))), ((int)(((byte)(244)))));
-            this.searchCstmBttn.BorderColor = System.Drawing.Color.Gray;
-            this.searchCstmBttn.BorderRadius = 19;
-            this.searchCstmBttn.BorderSize = 0;
-            this.searchCstmBttn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.searchCstmBttn.FlatAppearance.BorderSize = 0;
-            this.searchCstmBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchCstmBttn.ForeColor = System.Drawing.Color.White;
-            this.searchCstmBttn.Location = new System.Drawing.Point(313, 446);
-            this.searchCstmBttn.Name = "searchCstmBttn";
-            this.searchCstmBttn.Size = new System.Drawing.Size(92, 38);
-            this.searchCstmBttn.TabIndex = 4;
-            this.searchCstmBttn.Text = "Search";
-            this.searchCstmBttn.UseVisualStyleBackColor = false;
-            this.searchCstmBttn.Click += new System.EventHandler(this.searchCstmBttn_Click);
-            // 
-            // nameLbl
-            // 
-            this.nameLbl.AutoSize = true;
-            this.nameLbl.ForeColor = System.Drawing.Color.White;
-            this.nameLbl.Location = new System.Drawing.Point(26, 38);
-            this.nameLbl.Name = "nameLbl";
-            this.nameLbl.Size = new System.Drawing.Size(47, 16);
-            this.nameLbl.TabIndex = 4;
-            this.nameLbl.Text = "Name:";
-            // 
-            // ageLbl
-            // 
-            this.ageLbl.AutoSize = true;
-            this.ageLbl.ForeColor = System.Drawing.Color.White;
-            this.ageLbl.Location = new System.Drawing.Point(26, 95);
-            this.ageLbl.Name = "ageLbl";
-            this.ageLbl.Size = new System.Drawing.Size(35, 16);
-            this.ageLbl.TabIndex = 5;
-            this.ageLbl.Text = "Age:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(49)))), ((int)(((byte)(91)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(35, 44);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(370, 378);
-            this.textBox1.TabIndex = 5;
+            this.peopleInfoTxtBx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(49)))), ((int)(((byte)(91)))));
+            this.peopleInfoTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.peopleInfoTxtBx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(143)))), ((int)(((byte)(188)))));
+            this.peopleInfoTxtBx.Location = new System.Drawing.Point(35, 44);
+            this.peopleInfoTxtBx.Name = "peopleInfoTxtBx";
+            this.peopleInfoTxtBx.Size = new System.Drawing.Size(370, 378);
+            this.peopleInfoTxtBx.TabIndex = 6;
+            this.peopleInfoTxtBx.Text = "";
             // 
             // Form
             // 
@@ -316,13 +316,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form";
             this.backgroundCstmPnl.ResumeLayout(false);
+            this.peopleInfoCstmPnl.ResumeLayout(false);
             this.peopleInputCstmPnl.ResumeLayout(false);
             this.peopleInputCstmPnl.PerformLayout();
             this.minimizeClosePnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.closePctrBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizePctrBx)).EndInit();
-            this.peopleInfoCstmPnl.ResumeLayout(false);
-            this.peopleInfoCstmPnl.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -344,7 +343,7 @@
         private CustomControls.CustomButton searchCstmBttn;
         private System.Windows.Forms.Label ageLbl;
         private System.Windows.Forms.Label nameLbl;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RichTextBox peopleInfoTxtBx;
     }
 }
 

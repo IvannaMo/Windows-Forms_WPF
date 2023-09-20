@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms\\Classwork\\4\\WpfApp\\WpfApp\\WpfApp.csproj": {}
+    "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF\\Classwork\\4\\WpfApp\\WpfApp\\WpfApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms\\Classwork\\4\\WpfApp\\WpfApp\\WpfApp.csproj": {
+    "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF\\Classwork\\4\\WpfApp\\WpfApp\\WpfApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms\\Classwork\\4\\WpfApp\\WpfApp\\WpfApp.csproj",
+        "projectUniqueName": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF\\Classwork\\4\\WpfApp\\WpfApp\\WpfApp.csproj",
         "projectName": "WpfApp",
-        "projectPath": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms\\Classwork\\4\\WpfApp\\WpfApp\\WpfApp.csproj",
+        "projectPath": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF\\Classwork\\4\\WpfApp\\WpfApp\\WpfApp.csproj",
         "packagesPath": "C:\\Users\\ivann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms\\Classwork\\4\\WpfApp\\WpfApp\\obj\\",
+        "outputPath": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF\\Classwork\\4\\WpfApp\\WpfApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

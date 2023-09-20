@@ -65,7 +65,11 @@
     <Compile Include="Form.Designer.cs">
       <DependentUpon>Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="IModel.cs" />
+    <Compile Include="IView.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="Presenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CustomControls\CustomTextBox.resx" />

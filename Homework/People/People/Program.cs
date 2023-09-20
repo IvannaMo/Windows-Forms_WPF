@@ -16,7 +16,12 @@ namespace People
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form());
+
+            Form form = new Form();
+            IModel model = new Model();
+            Presenter presenter = new Presenter(form, model);
+
+            Application.Run(form);
         }
     }
 }
