@@ -9,8 +9,28 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="MVP\" />
-    <Folder Include="Fonts\" />
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Images\**" />
+    <Page Remove="Images\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Fonts\TTNormsPro-Medium.ttf" />
+    <None Remove="Fonts\TTNormsPro-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MVP\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\TTNormsPro-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\TTNormsPro-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+	
 </Project>

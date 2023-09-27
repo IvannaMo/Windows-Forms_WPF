@@ -1,21 +1,23 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.csproj.AssemblyReference.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\TextBoxDesign.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball_MarkupCompile.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball_MarkupCompile.lref
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\App.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.g.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\refint\Magic 8 ball.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.pdb
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\bin\Debug\net7.0-windows\Magic 8 ball.exe
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\bin\Debug\net7.0-windows\Magic 8 ball.deps.json
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\bin\Debug\net7.0-windows\Magic 8 ball.runtimeconfig.json
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\bin\Debug\net7.0-windows\Magic 8 ball.dll
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\bin\Debug\net7.0-windows\Magic 8 ball.pdb
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.csproj.AssemblyReference.cache
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\MainWindow.g.cs
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\App.g.cs
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball_MarkupCompile.cache
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball_MarkupCompile.lref
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\MainWindow.baml
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.g.resources
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.AssemblyInfoInputs.cache
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.AssemblyInfo.cs
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.csproj.CoreCompileInputs.cache
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.dll
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\refint\Magic 8 ball.dll
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.pdb
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\Magic 8 ball.genruntimeconfig.cache
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Magic 8 ball\Magic 8 ball\obj\Debug\net7.0-windows\ref\Magic 8 ball.dll
