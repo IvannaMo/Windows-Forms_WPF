@@ -1,0 +1,21 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\bin\Debug\net7.0-windows\Buttons Program.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\bin\Debug\net7.0-windows\Buttons Program.deps.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\bin\Debug\net7.0-windows\Buttons Program.runtimeconfig.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\bin\Debug\net7.0-windows\Buttons Program.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\bin\Debug\net7.0-windows\Buttons Program.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program.csproj.AssemblyReference.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program_MarkupCompile.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program_MarkupCompile.lref
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program.g.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program.AssemblyInfoInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program.AssemblyInfo.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program.csproj.CoreCompileInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\refint\Buttons Program.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\Buttons Program.genruntimeconfig.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Buttons Program\Buttons Program\obj\Debug\net7.0-windows\ref\Buttons Program.dll

@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel LastChildFill="True">
+        <WrapPanel DockPanel.Dock="Top">
+            <Button Width="40" FontSize="15" BorderBrush="Gray">1</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">2</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">3</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">4</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">5</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">6</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">7</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">8</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">9</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">10</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">11</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">12</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">13</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">14</Button>
+            <Button Width="40" FontSize="15" BorderBrush="Gray">15</Button>
+        </WrapPanel>
+
+       
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 4">
+            <Button>Да я уверен</Button>
+            <Button Margin="5, 0, 0, 0">Нет, я не согласен</Button>
+        </StackPanel>
+
+        
+        <Border Margin="3" BorderThickness="1" BorderBrush="DarkGray">
+            <TextBlock Padding="2, 0, 2, 0" FontSize="15">Это простой текстовый блок</TextBlock>
+        </Border>
+    </DockPanel>
+</Window>
