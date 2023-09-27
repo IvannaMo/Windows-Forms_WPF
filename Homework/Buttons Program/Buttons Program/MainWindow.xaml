@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Task" Height="350" Width="525">
     <DockPanel>
-        <WrapPanel Background="AliceBlue" DockPanel.Dock="Top" Orientation="Horizontal" Height="42">
-            <Button Margin="8" Padding="4">MenuItem1</Button>
-            <Button Margin="8" Padding="4">MenuItem2</Button>
-            <Button Margin="8" Padding="4">MenuItem3</Button>
+        <WrapPanel Background="AliceBlue" DockPanel.Dock="Top" Orientation="Horizontal">
+            <Button Margin="8" Padding="4" Height="26">MenuItem1</Button>
+            <Button Margin="8" Padding="4" Height="26">MenuItem2</Button>
+            <Button Margin="8" Padding="4" Height="26">MenuItem3</Button>
         </WrapPanel>
 
 
