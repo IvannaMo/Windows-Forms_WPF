@@ -12,7 +12,6 @@ namespace Safe
         string InputPassword { get; set; }
 
 
-        event EventHandler<EventArgs> NumEvent;
         event EventHandler<EventArgs> CEvent;
         event EventHandler<EventArgs> OkEvent;
     }

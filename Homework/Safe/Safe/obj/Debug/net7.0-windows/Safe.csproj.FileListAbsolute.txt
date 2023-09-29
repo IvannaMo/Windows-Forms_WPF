@@ -1,15 +1,14 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\bin\Debug\net7.0-windows\Safe.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\bin\Debug\net7.0-windows\Safe.deps.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\bin\Debug\net7.0-windows\Safe.runtimeconfig.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\bin\Debug\net7.0-windows\Safe.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\bin\Debug\net7.0-windows\Safe.pdb
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\Safe.csproj.AssemblyReference.cache
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\CustomDesigns.baml
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\MainWindow.g.cs
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\App.g.cs
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\Safe_MarkupCompile.cache
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\Safe_MarkupCompile.lref
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\bin\Debug\net7.0-windows\Safe.exe
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\bin\Debug\net7.0-windows\Safe.deps.json
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\bin\Debug\net7.0-windows\Safe.runtimeconfig.json
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\bin\Debug\net7.0-windows\Safe.dll
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\bin\Debug\net7.0-windows\Safe.pdb
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\App.baml
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\MainWindow.baml
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\Safe.g.resources
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\Safe.GeneratedMSBuildEditorConfig.editorconfig
@@ -21,3 +20,4 @@ C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Sa
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\Safe.pdb
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\Safe.genruntimeconfig.cache
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\ref\Safe.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Safe\Safe\obj\Debug\net7.0-windows\App.baml

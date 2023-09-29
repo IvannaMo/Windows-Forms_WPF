@@ -19,25 +19,13 @@ namespace Safe
             this.view = view;
             this.model = model;
 
-            view.NumEvent += new EventHandler<EventArgs>(NumInput);
             view.CEvent += new EventHandler<EventArgs>(ClearAll);
             view.OkEvent += new EventHandler<EventArgs>(OpenSafe);
 
 
-            view.FormTitle = "Пароль сейфа:" + model.Password;
+            view.FormTitle = "Пароль сейфа: " + model.Password;
         }
 
-
-        private void NumInput(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-
-
-            if (view.InputPassword.Length < 8)
-            {
-                view.InputPassword += button.Content.ToString();
-            }
-        }
 
         private void ClearAll(object sender, EventArgs e)
         {

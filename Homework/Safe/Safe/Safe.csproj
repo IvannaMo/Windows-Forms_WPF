@@ -5,21 +5,16 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <StartupObject>Safe.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Fonts\Gilroy-Black.ttf" />
     <None Remove="Fonts\Gilroy-Bold.ttf" />
     <None Remove="Fonts\TTNormsPro-Medium.ttf" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Fonts\Gilroy-Bold.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Fonts\TTNormsPro-Medium.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Fonts\Gilroy-Bold.ttf" />
   </ItemGroup>
 
 </Project>

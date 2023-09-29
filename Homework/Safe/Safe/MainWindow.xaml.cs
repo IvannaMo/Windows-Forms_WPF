@@ -46,7 +46,6 @@ namespace Safe
         }
 
 
-        public event EventHandler<EventArgs> NumEvent;
         public event EventHandler<EventArgs> CEvent;
         public event EventHandler<EventArgs> OkEvent;
 
@@ -54,12 +53,21 @@ namespace Safe
         public MainWindow()
         {
             InitializeComponent();
+
+
+            IModel model = new Model();
+            Presenter presenter = new Presenter(this, model);
         }
 
 
         private void numBttn_Click(object sender, RoutedEventArgs e)
         {
-            NumEvent?.Invoke(this, EventArgs.Empty);
+            Button button = (Button)sender;
+
+            if (InputPassword.Length < 8)
+            {
+                InputPassword += button.Content.ToString();
+            }
         }
 
         private void cBttn_Click(object sender, RoutedEventArgs e)
