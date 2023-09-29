@@ -1,0 +1,87 @@
+﻿<Window x:Class="Safe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Safe"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Safe" Height="632" Width="977">
+    <Grid Background="#f0f2f7">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.10*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="0.10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Grid.Column="1" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="483"></RowDefinition>
+                <RowDefinition Height="15"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <Border Background="#a7aae1" CornerRadius="54">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.08*"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="0.10*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.68*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.07*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Grid Grid.Column="1" Height="172">
+                        <Border VerticalAlignment="Top" Height="172" Width="50" Background="#6a6fc6" CornerRadius="24"></Border>
+                        <Border VerticalAlignment="Top" Height="148" Width="50" Background="#dfdff4" CornerRadius="24"></Border>
+                    </Grid>
+
+                    <Border Grid.Column="3" Height="370" Background="#6a6fc6" CornerRadius="25">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24"></ColumnDefinition>
+                                <ColumnDefinition Width="0.42*"></ColumnDefinition>
+                                <ColumnDefinition Width="18"></ColumnDefinition>
+                                <ColumnDefinition Width="249"></ColumnDefinition>
+                                <ColumnDefinition Width="18"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+
+                            <TextBox Grid.Column="1" Name="outputBox" Style="{StaticResource CustomTextBox}" IsReadOnlyCaretVisible="True" Height="322"></TextBox>
+                            <UniformGrid Grid.Column="3" Columns="3" Rows="4" Height="332">
+                                <Button Name="sevenBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="numBttn_Click" Cursor="Hand">7</Button>
+                                <Button Name="eightBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="numBttn_Click" Cursor="Hand">8</Button>
+                                <Button Name="nineBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="numBttn_Click" Cursor="Hand">9</Button>
+                                <Button Name="fourBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="numBttn_Click" Cursor="Hand">4</Button>
+                                <Button Name="fiveBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="numBttn_Click" Cursor="Hand">5</Button>
+                                <Button Name="sixBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="numBttn_Click" Cursor="Hand">6</Button>
+                                <Button Name="oneBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="numBttn_Click" Cursor="Hand">1</Button>
+                                <Button Name="twoBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="numBttn_Click" Cursor="Hand">2</Button>
+                                <Button Name="threeBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="numBttn_Click" Cursor="Hand">3</Button>
+                                <Button Name="cBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="cBttn_Click" Cursor="Hand">C</Button>
+                                <Button Name="zeroBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="42" Click="numBttn_Click" Cursor="Hand">0</Button>
+                                <Button Name="okBttn" Style="{StaticResource CustomButton}" Margin="7" Height="69" Width="69" FontFamily="/Fonts/#Gilroy" FontSize="35" Click="okBttn_Click"  Cursor="Hand">OK</Button>
+                            </UniformGrid>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.10*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.12*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.54*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.12*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.10*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Rectangle Grid.Column="1" Fill="#6a6fc6"></Rectangle>
+                <Rectangle Grid.Column="3" Fill="#6a6fc6"></Rectangle>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
