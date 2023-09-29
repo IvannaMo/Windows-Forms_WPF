@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resourses\**" />
+    <EmbeddedResource Remove="Resourses\**" />
+    <None Remove="Resourses\**" />
+    <Page Remove="Resourses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Flag-Ukraine.png" />
+    <None Remove="Flag-United-States-of-America.png" />
+    <None Remove="Images\Flag-Ukraine.png" />
+    <None Remove="Images\Flag-United-States-of-America.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Flag-Ukraine.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Flag-United-States-of-America.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
