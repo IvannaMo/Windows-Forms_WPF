@@ -1,0 +1,212 @@
+﻿<Window x:Class="Buttons_Program.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Buttons_Program"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Task" Height="350" Width="525">
+    <DockPanel>
+        <WrapPanel Background="AliceBlue" DockPanel.Dock="Top" Orientation="Horizontal">
+            <Button Name="menuItem1Bttn" Margin="8" Padding="4" Height="26" MouseEnter="menuItem1Bttn_MouseEnter">MenuItem1</Button>
+            <Button Name="menuItem2Bttn" Margin="8" Padding="4" Height="26" MouseEnter="menuItem2Bttn_MouseEnter">MenuItem2</Button>
+            <Button Name="menuItem3Bttn" Margin="8" Padding="4" Height="26" MouseEnter="menuItem3Bttn_MouseEnter">MenuItem3</Button>
+
+            
+            <Popup Name="menuItem1Ppp" Placement="Mouse" StaysOpen="True" AllowsTransparency="True">
+                <Border BorderThickness="2" BorderBrush="LightBlue" Background="Azure" Padding="5">
+                    <StackPanel>
+                        <TextBlock TextWrapping="Wrap">
+                        <Run FontWeight="Bold">
+                            This is MenuItem1
+                        </Run>
+                        <LineBreak/>
+                        <Run>
+                            Description
+                        </Run>
+                        </TextBlock>
+
+                        <Image Margin="0, 15, 0, 0" Width="40" Stretch="Uniform" Source="/Person 1.png"/>
+                        <Button Name="menuItem1PppBttn" Margin="0, 15, 0, 0" Height="30" Click="menuItem1PppBttn_Click">Ok</Button>
+                    </StackPanel>
+                </Border>
+            </Popup>
+            <Popup Name="menuItem2Ppp" Placement="Mouse" StaysOpen="True" AllowsTransparency="True">
+                <Border BorderThickness="2" BorderBrush="LightBlue" Background="Azure" Padding="5">
+                    <StackPanel>
+                        <TextBlock TextWrapping="Wrap">
+                        <Run FontWeight="Bold">
+                            This is MenuItem2
+                        </Run>
+                        <LineBreak/>
+                        <Run>
+                            Description
+                        </Run>
+                        </TextBlock>
+
+                        <Image Margin="0, 15, 0, 0" Width="40" Stretch="Uniform" Source="/Person 2.png"/>
+                        <Button Name="menuItem2PppBttn" Margin="0, 15, 0, 0" Height="30" Click="menuItem2PppBttn_Click">Ok</Button>
+                    </StackPanel>
+                </Border>
+            </Popup>
+            <Popup Name="menuItem3Ppp" Placement="Mouse" StaysOpen="True" AllowsTransparency="True">
+                <Border BorderThickness="2" BorderBrush="LightBlue" Background="Azure" Padding="5">
+                    <StackPanel>
+                        <TextBlock TextWrapping="Wrap">
+                        <Run FontWeight="Bold">
+                            This is MenuItem3
+                        </Run>
+                        <LineBreak/>
+                        <Run>
+                            Description
+                        </Run>
+                        </TextBlock>
+
+                        <Image Margin="0, 15, 0, 0" Width="40" Stretch="Uniform" Source="/Person 3.png"/>
+                        <Button Name="menuItem3PppBttn" Margin="0, 15, 0, 0" Height="30" Click="menuItem3PppBttn_Click">Ok</Button>
+                    </StackPanel>
+                </Border>
+            </Popup>
+        </WrapPanel>
+
+        
+        <StatusBar Background="AliceBlue" DockPanel.Dock="Bottom" Height="28">
+            <StatusBarItem>
+                <TextBlock>Status Bar</TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="106"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <StackPanel Background="BlanchedAlmond">
+                <Button Margin="16, 4, 16, 4" Padding="4" Content="Operation 1">
+                    <Button.ToolTip>
+                        <ToolTip Background="LightYellow">
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold">Explanation to operation 1</TextBlock>
+                                <Image Width="40" Stretch="Uniform" Source="/Magic Wand.png"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <Button Margin="16, 4, 16, 4" Padding="4" Content="Operation 2">
+                    <Button.ToolTip>
+                        <ToolTip Background="LightYellow">
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold">Explanation to operation 2</TextBlock>
+                                <Image Width="40" Stretch="Uniform" Source="/Paint.png"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <Button Margin="16, 4, 16, 4" Padding="4" Content="Operation 3">
+                    <Button.ToolTip>
+                        <ToolTip Background="LightYellow">
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold">Explanation to operation 3</TextBlock>
+                                <Image Width="40" Stretch="Uniform" Source="/Pen.png"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <Button Margin="16, 4, 16, 4" Padding="4" Content="Operation 4">
+                    <Button.ToolTip>
+                        <ToolTip Background="LightYellow">
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold">Explanation to operation 4</TextBlock>
+                                <Image Width="40" Stretch="Uniform" Source="/Eraser.png"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <Button Margin="16, 4, 16, 4" Padding="4" Content="Operation 5">
+                    <Button.ToolTip>
+                        <ToolTip Background="LightYellow">
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold">Explanation to operation 5</TextBlock>
+                                <Image Width="40" Stretch="Uniform" Source="/Text.png"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+            </StackPanel>
+
+
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                
+                <TextBox Grid.ColumnSpan="2" Margin="10"></TextBox>
+
+
+                <GridSplitter Grid.ColumnSpan="2" Grid.Row="1" ShowsPreview="False" HorizontalAlignment="Stretch" Height="4" Background="Gray"></GridSplitter>
+
+
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    
+                    
+                    <Button Content="1">
+                        <Button.ToolTip>
+                            <ToolTip Background="WhiteSmoke">
+                                <StackPanel>
+                                    <TextBlock FontWeight="Bold"> Button 1 </TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Grid.Column="1" Content="2">
+                        <Button.ToolTip>
+                            <ToolTip Background="WhiteSmoke">
+                                <StackPanel>
+                                    <TextBlock FontWeight="Bold"> Button 2 </TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Grid.Row="1" Content="3">
+                        <Button.ToolTip>
+                            <ToolTip Background="WhiteSmoke">
+                                <StackPanel>
+                                    <TextBlock FontWeight="Bold"> Button 3 </TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Grid.Column="1" Grid.Row="1" Content="4">
+                        <Button.ToolTip>
+                            <ToolTip Background="WhiteSmoke">
+                                <StackPanel>
+                                    <TextBlock FontWeight="Bold"> Button 4 </TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Grid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>Buttons_Program</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Eraser.png" />
+    <None Remove="Magic Wand.png" />
+    <None Remove="Paint.png" />
+    <None Remove="Pen.png" />
+    <None Remove="Person 1.png" />
+    <None Remove="Person 2.png" />
+    <None Remove="Person 3.png" />
+    <None Remove="Text.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Eraser.png" />
+    <Resource Include="Magic Wand.png" />
+    <Resource Include="Paint.png" />
+    <Resource Include="Pen.png" />
+    <Resource Include="Person 1.png" />
+    <Resource Include="Person 2.png" />
+    <Resource Include="Person 3.png" />
+    <Resource Include="Text.png" />
+  </ItemGroup>
+
+</Project>
