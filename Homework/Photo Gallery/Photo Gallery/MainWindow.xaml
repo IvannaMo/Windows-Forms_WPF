@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         MinHeight="400"
-        MinWidth="870"
-        Title="" Height="673" Width="949">
+        MinWidth="1050"
+        Title="" Height="750" Width="1050">
         
 
     <Window.Resources>
@@ -52,9 +52,10 @@
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="BorderBrush" Value="Transparent"/>
             <Setter Property="Margin" Value="0, 0, 22, 0"/>
-            <Setter Property="Padding" Value="-22, 0, 0, 0"/>
+            <Setter Property="Padding" Value="22, 0, 44, 0"/>
             <Setter Property="Height" Value="57"/>
-            <Setter Property="Width" Value="154"/>
+            <Setter Property="MinWidth" Value="154"/>
+            <Setter Property="Width" Value="Auto"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="VerticalAlignment" Value="Top"/>
             <Setter Property="FontFamily" Value="/Fonts/#SJSans"/>
@@ -117,7 +118,7 @@
             <TabControl Style="{DynamicResource TabControlStyle}">
                 <TabItem Style="{DynamicResource TabItemStyle}">
                     <TabItem.Header>
-                        <TextBlock>1</TextBlock>
+                        <TextBlock Name="tabItemHdr1">1</TextBlock>
                     </TabItem.Header>
 
                     
@@ -139,7 +140,7 @@
                 
                 <TabItem Style="{DynamicResource TabItemStyle}">
                     <TabItem.Header>
-                        <TextBlock>2</TextBlock>
+                        <TextBlock Name="tabItemHdr2">2</TextBlock>
                     </TabItem.Header>
 
 
@@ -161,7 +162,7 @@
                 
                 <TabItem Style="{DynamicResource TabItemStyle}">
                     <TabItem.Header>
-                        <TextBlock>3</TextBlock>
+                        <TextBlock Name="tabItemHdr3">3</TextBlock>
                     </TabItem.Header>
 
                     
@@ -183,7 +184,7 @@
                 
                 <TabItem Style="{DynamicResource TabItemStyle}">
                     <TabItem.Header>
-                        <TextBlock>4</TextBlock>
+                        <TextBlock Name="tabItemHdr4">4</TextBlock>
                     </TabItem.Header>
 
 
@@ -205,7 +206,7 @@
 
                 <TabItem Style="{DynamicResource TabItemStyle}">
                     <TabItem.Header>
-                        <TextBlock>5</TextBlock>
+                        <TextBlock Name="tabItemHdr5">5</TextBlock>
                     </TabItem.Header>
 
 

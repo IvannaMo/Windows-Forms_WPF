@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Photo_Gallery
 {
@@ -47,9 +48,18 @@ namespace Photo_Gallery
 
 
             tabItemImg1.Source = new BitmapImage(new Uri(imagePaths[randomList[0]], UriKind.Relative));
+            tabItemHdr1.Text = imagePaths[randomList[0]].Replace("/Images/", "");
+
             tabItemImg3.Source = new BitmapImage(new Uri(imagePaths[randomList[1]], UriKind.Relative));
+            tabItemHdr3.Text = imagePaths[randomList[1]].Replace("/Images/", "");
+
             tabItemImg4.Source = new BitmapImage(new Uri(imagePaths[randomList[2]], UriKind.Relative));
+            tabItemHdr4.Text = imagePaths[randomList[2]].Replace("/Images/", "");
+
             tabItemImg5.Source = new BitmapImage(new Uri(imagePaths[randomList[3]], UriKind.Relative));
+            tabItemHdr5.Text = imagePaths[randomList[3]].Replace("/Images/", "");
+
+            tabItemHdr2.Text = tabItemImg2.Source.ToString().Replace("../../../Images/", "");
         }
     }
 }
