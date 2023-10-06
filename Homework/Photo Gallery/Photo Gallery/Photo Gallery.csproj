@@ -9,4 +9,22 @@
     <StartupObject>Photo_Gallery.Program</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Fonts\SJ Sans.ttf" />
+    <None Remove="Images\Animation.gif" />
+    <None Remove="Images\GameDev.jpg" />
+    <None Remove="Images\Internet.jpg" />
+    <None Remove="Images\Programming.jpg" />
+    <None Remove="Images\Thinking.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\SJ Sans.ttf" />
+    <Resource Include="Images\Animation.gif" />
+    <Resource Include="Images\GameDev.jpg" />
+    <Resource Include="Images\Internet.jpg" />
+    <Resource Include="Images\Programming.jpg" />
+    <Resource Include="Images\Thinking.jpg" />
+  </ItemGroup>
+
 </Project>

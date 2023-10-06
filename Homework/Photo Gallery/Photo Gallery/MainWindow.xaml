@@ -6,34 +6,32 @@
         xmlns:local="clr-namespace:Photo_Gallery"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="722" Width="967">
-
-
-    <Window.Resources>
-        <SolidColorBrush x:Key="color1" Color="Aqua"></SolidColorBrush>
-        <SolidColorBrush x:Key="color2" Color="Red"></SolidColorBrush>
+        MinHeight="400"
+        MinWidth="870"
+        Title="" Height="673" Width="949">
         
 
+    <Window.Resources>
         <Style x:Key="TabControlStyle" TargetType="TabControl">
-            <Setter Property="Background" Value="Orange"/>
+            <Setter Property="Background" Value="White"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="BorderBrush" Value="Transparent"/>
             <Setter Property="Padding" Value="5"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TabControl">
                         <Grid SnapsToDevicePixels="True">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="40"></RowDefinition>
+                                <RowDefinition Height="79"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
                             </Grid.RowDefinitions>
                             <TabPanel Grid.Row="0" 
                                       Background="Transparent"
                                       IsItemsHost="True"/>
                             <Border Grid.Row="1"
-                                    CornerRadius="5"
+                                    CornerRadius="35"
                                     BorderThickness="{TemplateBinding BorderThickness}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     Background="{TemplateBinding Background}">
@@ -49,20 +47,24 @@
         </Style>
         
         <Style x:Key="TabItemStyle" TargetType="TabItem">
-            <Setter Property="Background" Value="Black"/>
-            <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+            <Setter Property="Background" Value="#edf1f4"/>
+            <Setter Property="Foreground" Value="#939c9d"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Margin" Value="0 0 5 0"/>
-            <Setter Property="Padding" Value="12 10 12 10"/>
-            <Setter Property="Width" Value="100"/>
+            <Setter Property="Margin" Value="0, 0, 22, 0"/>
+            <Setter Property="Padding" Value="-22, 0, 0, 0"/>
+            <Setter Property="Height" Value="57"/>
+            <Setter Property="Width" Value="154"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="FontFamily" Value="/Fonts/#SJSans"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TabItem">
                         <Grid SnapsToDevicePixels="True">
-                            <Border CornerRadius="5" 
+                            <Border CornerRadius="15" 
                                     Background="{TemplateBinding Background}" 
                                     BorderThickness="{TemplateBinding BorderThickness}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
@@ -77,12 +79,12 @@
                         </Grid>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="BlueViolet"/>
+                                <Setter Property="Background" Value="#5ae4a8"/>
                                 <Setter Property="Foreground" Value="White"/>
                             </Trigger>
                             <Trigger Property="IsSelected" Value="True">
-                                <Setter Property="Background" Value="CadetBlue"/>
-                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="Background" Value="White"/>
+                                <Setter Property="Foreground" Value="#060606"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -92,33 +94,135 @@
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="52"></ColumnDefinition>
-            <ColumnDefinition Width="0.89*"></ColumnDefinition>
-            <ColumnDefinition Width="52"></ColumnDefinition>
+            <ColumnDefinition Width="43"></ColumnDefinition>
+            <ColumnDefinition Width="0.91*"></ColumnDefinition>
+            <ColumnDefinition Width="43"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="86"></RowDefinition>
-            <RowDefinition Height="0.78*"></RowDefinition>
-            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="54"></RowDefinition>
+            <RowDefinition Height="0.84*"></RowDefinition>
+            <RowDefinition Height="54"></RowDefinition>
         </Grid.RowDefinitions>
+
+        
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0, 0" EndPoint="0, 1">
+                <GradientStop Color="#EBF6D5" Offset="0"/>
+                <GradientStop Color="#93F3CF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         
         
         <Border Grid.Column="1" Grid.Row="1">
-            <TabControl Width="400" Height="500" Style="{DynamicResource TabControlStyle}">
+            <TabControl Style="{DynamicResource TabControlStyle}">
                 <TabItem Style="{DynamicResource TabItemStyle}">
                     <TabItem.Header>
                         <TextBlock>1</TextBlock>
                     </TabItem.Header>
+
+                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                            <ColumnDefinition Width="0.91*"></ColumnDefinition>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="0.84*"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Image Name="tabItemImg1" Grid.Column="1" Grid.Row="1" Stretch="Uniform"/>
+                    </Grid>
                 </TabItem>
+                
                 <TabItem Style="{DynamicResource TabItemStyle}">
                     <TabItem.Header>
                         <TextBlock>2</TextBlock>
                     </TabItem.Header>
+
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                            <ColumnDefinition Width="0.91*"></ColumnDefinition>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="0.84*"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Image Name="tabItemImg2" Grid.Column="1" Grid.Row="1" Stretch="Uniform"/>
+                    </Grid>
                 </TabItem>
+                
                 <TabItem Style="{DynamicResource TabItemStyle}">
                     <TabItem.Header>
-                        <TextBlock>2</TextBlock>
+                        <TextBlock>3</TextBlock>
                     </TabItem.Header>
+
+                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                            <ColumnDefinition Width="0.91*"></ColumnDefinition>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="0.84*"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Image Name="tabItemImg3" Grid.Column="1" Grid.Row="1" Stretch="Uniform"/>
+                    </Grid>
+                </TabItem>
+                
+                <TabItem Style="{DynamicResource TabItemStyle}">
+                    <TabItem.Header>
+                        <TextBlock>4</TextBlock>
+                    </TabItem.Header>
+
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                            <ColumnDefinition Width="0.91*"></ColumnDefinition>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="0.84*"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Image Name="tabItemImg4" Grid.Column="1" Grid.Row="1" Stretch="Uniform"/>
+                    </Grid>
+                </TabItem>
+
+                <TabItem Style="{DynamicResource TabItemStyle}">
+                    <TabItem.Header>
+                        <TextBlock>5</TextBlock>
+                    </TabItem.Header>
+
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                            <ColumnDefinition Width="0.91*"></ColumnDefinition>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="0.84*"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Image Name="tabItemImg5" Grid.Column="1" Grid.Row="1" Stretch="Uniform"/>
+                    </Grid>
                 </TabItem>
             </TabControl>
         </Border>
