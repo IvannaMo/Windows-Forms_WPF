@@ -1,0 +1,21 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery.csproj.AssemblyReference.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery_MarkupCompile.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery_MarkupCompile.lref
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\bin\Debug\net7.0-windows\Photo Gallery.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\bin\Debug\net7.0-windows\Photo Gallery.deps.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\bin\Debug\net7.0-windows\Photo Gallery.runtimeconfig.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\bin\Debug\net7.0-windows\Photo Gallery.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\bin\Debug\net7.0-windows\Photo Gallery.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery.g.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery.AssemblyInfoInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery.AssemblyInfo.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery.csproj.CoreCompileInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\refint\Photo Gallery.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\Photo Gallery.genruntimeconfig.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Photo Gallery\Photo Gallery\obj\Debug\net7.0-windows\ref\Photo Gallery.dll
