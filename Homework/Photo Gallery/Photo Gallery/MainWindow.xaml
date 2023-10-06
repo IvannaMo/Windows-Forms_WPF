@@ -155,7 +155,7 @@
                             <RowDefinition Height="40"></RowDefinition>
                         </Grid.RowDefinitions>
 
-                        <Image Name="tabItemImg2" Grid.Column="1" Grid.Row="1" Stretch="Uniform"/>
+                        <MediaElement Name="tabItemImg2" Grid.Column="1" Grid.Row="1" Source="../../../Images/Animation.gif" LoadedBehavior="Play" Stretch="Uniform"/>
                     </Grid>
                 </TabItem>
                 

@@ -20,7 +20,9 @@
 
   <ItemGroup>
     <Resource Include="Fonts\SJ Sans.ttf" />
-    <Resource Include="Images\Animation.gif" />
+    <Resource Include="Images\Animation.gif">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\GameDev.jpg" />
     <Resource Include="Images\Internet.jpg" />
     <Resource Include="Images\Programming.jpg" />

@@ -28,15 +28,15 @@ namespace Photo_Gallery
             InitializeComponent();
 
 
-            imagePaths = new List<string>() { "/Images/Programming.jpg", "/Images/Internet.jpg", "/Images/GameDev.jpg", "/Images/Thinking.jpg", "/Images/Animation.gif" };
+            imagePaths = new List<string>() { "/Images/Programming.jpg", "/Images/Internet.jpg", "/Images/GameDev.jpg", "/Images/Thinking.jpg" };
 
 
             Random random = new Random();
             List<int> randomList = new List<int>();
 
             int i = 0;
-            while (i < 5)
-            {   
+            while (i < imagePaths.Count())
+            {
                 int num = random.Next(0, imagePaths.Count());
                 if (!randomList.Contains(num))
                 {
@@ -47,10 +47,9 @@ namespace Photo_Gallery
 
 
             tabItemImg1.Source = new BitmapImage(new Uri(imagePaths[randomList[0]], UriKind.Relative));
-            tabItemImg2.Source = new BitmapImage(new Uri(imagePaths[randomList[1]], UriKind.Relative));
-            tabItemImg3.Source = new BitmapImage(new Uri(imagePaths[randomList[2]], UriKind.Relative));
-            tabItemImg4.Source = new BitmapImage(new Uri(imagePaths[randomList[3]], UriKind.Relative));
-            tabItemImg5.Source = new BitmapImage(new Uri(imagePaths[randomList[4]], UriKind.Relative));
+            tabItemImg3.Source = new BitmapImage(new Uri(imagePaths[randomList[1]], UriKind.Relative));
+            tabItemImg4.Source = new BitmapImage(new Uri(imagePaths[randomList[2]], UriKind.Relative));
+            tabItemImg5.Source = new BitmapImage(new Uri(imagePaths[randomList[3]], UriKind.Relative));
         }
     }
 }
