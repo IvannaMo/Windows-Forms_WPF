@@ -1,0 +1,111 @@
+﻿<Window x:Class="Puzzle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Puzzle"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="601" Width="947">
+    <Grid Grid.Row="1" Background="#F5DFCA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="46"></RowDefinition>
+            <RowDefinition Height="49"></RowDefinition>
+            <RowDefinition Height="0.82*"></RowDefinition>
+            <RowDefinition Height="49"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.27*"></ColumnDefinition>
+            <ColumnDefinition Width="48"></ColumnDefinition>
+            <ColumnDefinition Width="0.63*"></ColumnDefinition>
+            <ColumnDefinition Width="48"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Menu Grid.ColumnSpan="4" Background="#B57F5B" BorderBrush="#6A4125" BorderThickness="3" Foreground="#F5DFCA">
+            <MenuItem Header="PUZZLE" Padding="20, -3, 20, 0" FontSize="24" FontFamily="/Fonts/#Laro Soft Bold" Cursor="Hand">
+                <MenuItem Name="puzzleChoice1" Header="1" Background="#B57F5B" BorderBrush="#6A4125" BorderThickness="3" Cursor="Hand" Click="puzzleChoice1_Click"/>
+                <MenuItem Name="puzzleChoice2" Header="2" Background="#B57F5B" BorderBrush="#6A4125" BorderThickness="3, 0, 3, 3" Cursor="Hand" Click="puzzleChoice2_Click"/>
+                <MenuItem Name="puzzleChoice3" Header="3" Background="#B57F5B" BorderBrush="#6A4125" BorderThickness="3, 0, 3, 3" Cursor="Hand" Click="puzzleChoice3_Click"/>
+            </MenuItem>
+        </Menu>
+
+
+        <Border Grid.Row="1" Grid.RowSpan="3" BorderBrush="#89604E" BorderThickness="3, 0, 3, 3">
+            <ScrollViewer Background="#D5B59E" VerticalScrollBarVisibility="Hidden">
+                <StackPanel>
+                    <Grid>
+                        <Border Name="puzzlePiece1" Margin="34, 37, 34, 30" Height="{Binding ElementName=puzzlePiece1, Path=ActualWidth}" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3" AllowDrop="True" Drop="puzzlePieceImg_Drop">
+                            <Image Name="puzzlePieceImg1" Stretch="Uniform" MouseDown="puzzlePieceImg_MouseDown"/>
+                        </Border>
+                    </Grid>
+                    
+                    <Grid>
+                        <Border Name="puzzlePiece2" Margin="34, 0, 34, 30" Height="{Binding ElementName=puzzlePiece2, Path=ActualWidth}" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3" AllowDrop="True" Drop="puzzlePieceImg_Drop">
+                            <Image Name="puzzlePieceImg2" Stretch="Uniform" MouseDown="puzzlePieceImg_MouseDown"/>
+                        </Border>
+                    </Grid>
+                    
+                    <Grid>
+                        <Border Name="puzzlePiece3" Margin="34, 0, 34, 30" Height="{Binding ElementName=puzzlePiece3, Path=ActualWidth}" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3" AllowDrop="True" Drop="puzzlePieceImg_Drop">
+                            <Image Name="puzzlePieceImg3" Stretch="Uniform" MouseDown="puzzlePieceImg_MouseDown"/>
+                        </Border>
+                    </Grid>
+                    
+                    <Grid>
+                        <Border Name="puzzlePiece4" Margin="34, 0, 34, 30" Height="{Binding ElementName=puzzlePiece4, Path=ActualWidth}" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3" AllowDrop="True" Drop="puzzlePieceImg_Drop">
+                            <Image Name="puzzlePieceImg4" Stretch="Uniform" MouseDown="puzzlePieceImg_MouseDown"/>
+                        </Border>
+                    </Grid>
+                    
+                    <Grid>
+                        <Border Name="puzzlePiece5" Margin="34, 0, 34, 30" Height="{Binding ElementName=puzzlePiece5, Path=ActualWidth}" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3" AllowDrop="True" Drop="puzzlePieceImg_Drop">
+                            <Image Name="puzzlePieceImg5" Stretch="Uniform" MouseDown="puzzlePieceImg_MouseDown"/>
+                        </Border>
+                    </Grid>
+                    
+                    <Grid>
+                        <Border Name="puzzlePiece6" Margin="34, 0, 34, 37" Height="{Binding ElementName=puzzlePiece6, Path=ActualWidth}" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3" AllowDrop="True" Drop="puzzlePieceImg_Drop">
+                            <Image Name="puzzlePieceImg6" Stretch="Uniform" MouseDown="puzzlePieceImg_MouseDown"/>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+        
+        
+        <Border Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" Grid.ColumnSpan="3" BorderBrush="#89604E" BorderThickness="0, 0, 3, 3"></Border>
+
+
+        <Grid Name="puzzle" Grid.Row="2" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <Border Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3, 3, 1.5, 1.5" AllowDrop="True" Drop="puzzleImage_Drop">
+                <Image Name="puzzleImg1" Stretch="Fill" MouseDown="puzzleImage_MouseDown"/>
+            </Border>
+            <Border Grid.Column="1" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 3, 1.5, 1.5" AllowDrop="True" Drop="puzzleImage_Drop" MouseDown="puzzleImage_MouseDown">
+                <Image Name="puzzleImg2" Stretch="Fill" MouseDown="puzzleImage_MouseDown"/>
+            </Border>
+            <Border Grid.Column="2" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 3, 3, 1.5" AllowDrop="True" Drop="puzzleImage_Drop" MouseDown="puzzleImage_MouseDown">
+                <Image Name="puzzleImg3" Stretch="Fill" MouseDown="puzzleImage_MouseDown"/>
+            </Border>
+            <Border Grid.Row="1" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3, 1.5, 1.5, 3" AllowDrop="True" Drop="puzzleImage_Drop" MouseDown="puzzleImage_MouseDown">
+                <Image Name="puzzleImg4" Stretch="Fill" MouseDown="puzzleImage_MouseDown"/>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 1.5, 1.5, 3" AllowDrop="True" Drop="puzzleImage_Drop" MouseDown="puzzleImage_MouseDown">
+                <Image Name="puzzleImg5" Stretch="Fill" MouseDown="puzzleImage_MouseDown"/>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="2" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 1.5, 3, 3" AllowDrop="True" Drop="puzzleImage_Drop" MouseDown="puzzleImage_MouseDown">
+                <Image Name="puzzleImg6" Stretch="Fill" MouseDown="puzzleImage_MouseDown"/>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

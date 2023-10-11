@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Laro Soft Bold.ttf" />
+    <None Remove="Images\A.png" />
+    <None Remove="Images\Puzzle 1.jpg" />
+    <None Remove="Images\Puzzle 2.jpg" />
+    <None Remove="Images\Puzzle 3.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Laro Soft Bold.ttf" />
+    <Resource Include="Images\Puzzle 1.jpg" />
+    <Resource Include="Images\Puzzle 2.jpg" />
+    <Resource Include="Images\Puzzle 3.jpg" />
+  </ItemGroup>
+
+</Project>
