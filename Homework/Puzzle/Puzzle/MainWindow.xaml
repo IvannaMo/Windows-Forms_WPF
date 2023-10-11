@@ -91,20 +91,20 @@
             <Border Name="mainPuzzle1" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3, 3, 1.5, 1.5" AllowDrop="True" Drop="mainPuzzleImg_Drop">
                 <Image Name="mainPuzzleImg1" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
             </Border>
-            <Border Grid.Column="1" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 3, 1.5, 1.5" AllowDrop="True" Drop="mainPuzzleImg_Drop">
-                <Image Name="puzzleImg2" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
+            <Border Name="mainPuzzle2" Grid.Column="1" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 3, 1.5, 1.5" AllowDrop="True" Drop="mainPuzzleImg_Drop">
+                <Image Name="mainPuzzleImg2" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
             </Border>
-            <Border Grid.Column="2" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 3, 3, 1.5" AllowDrop="True" Drop="mainPuzzleImg_Drop">
-                <Image Name="puzzleImg3" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
+            <Border Name="mainPuzzle3" Grid.Column="2" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 3, 3, 1.5" AllowDrop="True" Drop="mainPuzzleImg_Drop">
+                <Image Name="mainPuzzleImg3" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
             </Border>
-            <Border Grid.Row="1" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3, 1.5, 1.5, 3" AllowDrop="True" Drop="mainPuzzleImg_Drop">
-                <Image Name="puzzleImg4" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
+            <Border Name="mainPuzzle4" Grid.Row="1" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="3, 1.5, 1.5, 3" AllowDrop="True" Drop="mainPuzzleImg_Drop">
+                <Image Name="mainPuzzleImg4" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
             </Border>
-            <Border Grid.Row="1" Grid.Column="1" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 1.5, 1.5, 3" AllowDrop="True" Drop="mainPuzzleImg_Drop">
-                <Image Name="puzzleImg5" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
+            <Border Name="mainPuzzle5" Grid.Row="1" Grid.Column="1" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 1.5, 1.5, 3" AllowDrop="True" Drop="mainPuzzleImg_Drop">
+                <Image Name="mainPuzzleImg5" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
             </Border>
-            <Border Grid.Row="1" Grid.Column="2" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 1.5, 3, 3" AllowDrop="True" Drop="mainPuzzleImg_Drop">
-                <Image Name="puzzleImg6" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
+            <Border Name="mainPuzzle6" Grid.Row="1" Grid.Column="2" Background="#C3B5A8" BorderBrush="#93816B" BorderThickness="1.5, 1.5, 3, 3" AllowDrop="True" Drop="mainPuzzleImg_Drop">
+                <Image Name="mainPuzzleImg6" Stretch="Fill" MouseDown="mainPuzzleImg_MouseDown"/>
             </Border>
         </Grid>
     </Grid>
