@@ -83,11 +83,11 @@ namespace Puzzle
 
 
             mainPuzzleImg1.Source = null;
-            puzzleImg2.Source = null;
-            puzzleImg3.Source = null;
-            puzzleImg4.Source = null;
-            puzzleImg5.Source = null;
-            puzzleImg6.Source = null;
+            mainPuzzleImg2.Source = null;
+            mainPuzzleImg3.Source = null;
+            mainPuzzleImg4.Source = null;
+            mainPuzzleImg5.Source = null;
+            mainPuzzleImg6.Source = null;
         }
 
 
