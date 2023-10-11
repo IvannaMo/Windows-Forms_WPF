@@ -82,7 +82,7 @@ namespace Puzzle
             puzzlePieceImg6.Source = puzzlePiecesBmp[randomList[5]];
 
 
-            puzzleImg1.Source = null;
+            mainPuzzleImg1.Source = null;
             puzzleImg2.Source = null;
             puzzleImg3.Source = null;
             puzzleImg4.Source = null;
@@ -114,28 +114,7 @@ namespace Puzzle
         {
             Image puzzlePiece = (Image)sender;
             DragDrop.DoDragDrop(puzzlePiece, new DataObject(typeof(ImageSource), puzzlePiece.Source), DragDropEffects.Move);
-
-            puzzlePiece.Source = null;
         }
-
-
-        private void puzzleImage_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Image puzzlePiece = (Image)sender;
-            DragDrop.DoDragDrop(puzzlePiece, new DataObject(typeof(ImageSource), puzzlePiece.Source), DragDropEffects.Move);
-
-            puzzlePiece.Source = null;
-        }
-
-
-        private void puzzleImage_Drop(object sender, DragEventArgs e)
-        {
-            Border border = (Border)sender;
-            Image puzzleImage = (Image)border.Child;
-            
-            puzzleImage.Source = (ImageSource)e.Data.GetData(typeof(ImageSource));
-        }
-
 
         private void puzzlePieceImg_Drop(object sender, DragEventArgs e)
         {
@@ -143,6 +122,21 @@ namespace Puzzle
             Image puzzleImage = (Image)border.Child;
 
             puzzleImage.Source = (ImageSource)e.Data.GetData(typeof(ImageSource));
+        }
+
+
+        private void mainPuzzleImg_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Image mainPuzzle = (Image)sender;
+            DragDrop.DoDragDrop(mainPuzzle, new DataObject(typeof(ImageSource), mainPuzzle.Source), DragDropEffects.Move);
+        }
+
+        private void mainPuzzleImg_Drop(object sender, DragEventArgs e)
+        {
+            Border border = (Border)sender;
+            Image mainPuzzleImg = (Image)border.Child;
+
+            mainPuzzleImg.Source = (ImageSource)e.Data.GetData(typeof(ImageSource));
         }
     }
 }
