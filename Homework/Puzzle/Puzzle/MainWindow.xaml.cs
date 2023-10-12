@@ -51,12 +51,15 @@ namespace Puzzle
 
 
             puzzlePiecesBmp.Clear();
-            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(0, 0, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 2)));
-            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(imageBmp.PixelWidth / 3, 0, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 2)));
-            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(imageBmp.PixelWidth / 3 * 2, 0, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 2)));
-            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(0, imageBmp.PixelHeight / 2, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 2)));
-            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 2, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 2)));
-            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(imageBmp.PixelWidth / 3 * 2, imageBmp.PixelHeight / 2, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 2)));
+            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(0, 0, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3)));
+            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(imageBmp.PixelWidth / 3, 0, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3)));
+            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(imageBmp.PixelWidth / 3 * 2, 0, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3)));
+            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(0, imageBmp.PixelHeight / 3, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3)));
+            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3)));
+            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(imageBmp.PixelWidth / 3 * 2, imageBmp.PixelHeight / 3, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3)));
+            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(0, imageBmp.PixelHeight / 3 * 2, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3)));
+            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3 * 2, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3)));
+            puzzlePiecesBmp.Add(new CroppedBitmap(imageBmp, new Int32Rect(imageBmp.PixelWidth / 3 * 2, imageBmp.PixelHeight / 3 * 2, imageBmp.PixelWidth / 3, imageBmp.PixelHeight / 3)));
 
 
             Random random = new Random();
@@ -80,6 +83,9 @@ namespace Puzzle
             puzzlePieceImg4.Source = puzzlePiecesBmp[randomList[3]];
             puzzlePieceImg5.Source = puzzlePiecesBmp[randomList[4]];
             puzzlePieceImg6.Source = puzzlePiecesBmp[randomList[5]];
+            puzzlePieceImg7.Source = puzzlePiecesBmp[randomList[6]];
+            puzzlePieceImg8.Source = puzzlePiecesBmp[randomList[7]];
+            puzzlePieceImg9.Source = puzzlePiecesBmp[randomList[8]];
 
 
             mainPuzzleImg1.Source = null;
@@ -88,6 +94,9 @@ namespace Puzzle
             mainPuzzleImg4.Source = null;
             mainPuzzleImg5.Source = null;
             mainPuzzleImg6.Source = null;
+            mainPuzzleImg7.Source = null;
+            mainPuzzleImg8.Source = null;
+            mainPuzzleImg9.Source = null;
         }
 
 
