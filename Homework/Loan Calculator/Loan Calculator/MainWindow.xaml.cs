@@ -28,7 +28,7 @@ namespace Loan_Calculator
 
         private void salaryTxtBx_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            if (!int.TryParse(e.Text, out _) && e.Text != ".")
+            if (!Int32.TryParse(e.Text, out _))
             {
                 e.Handled = true;
             }
@@ -42,12 +42,21 @@ namespace Loan_Calculator
             }
         }
 
+        private void salaryTxtBx_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            loanSldr.Value = loanSldr.Maximum = customControl.Data;
+        }
+
 
         private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             if (String.IsNullOrEmpty(salaryTxtBx.Text))
             {
-                slider.Value = 0;
+                loanSldr.Value = 0;
+            }
+            else
+            {
+                loan.Text = ((int)(loanSldr.Value * 2)).ToString();
             }
         }
     }

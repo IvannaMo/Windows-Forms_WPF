@@ -7,14 +7,14 @@ using System.Windows;
 
 namespace Loan_Calculator
 {
-    internal class Property : FrameworkElement
+    internal class Control : FrameworkElement
     {
         public static DependencyProperty DataProperty;
 
 
-        static Property()
+        static Control()
         {
-            DataProperty = DependencyProperty.Register("Data", typeof(int), typeof(Property));
+            DataProperty = DependencyProperty.Register("Data", typeof(int), typeof(Control));
         }
 
 

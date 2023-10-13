@@ -19,3 +19,4 @@ C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Lo
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.pdb
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.genruntimeconfig.cache
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\ref\Loan Calculator.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs

@@ -97,13 +97,14 @@
         </Style>
     </Window.Resources>
     <Grid Background="#191C47">
-        <local:Property x:Name="customControl" Data="{Binding ElementName=salaryTxtBx}"/>
-
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="38.36*"></ColumnDefinition>
             <ColumnDefinition Width="61.64*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+
+
+        <local:Control x:Name="customControl" Data="{Binding ElementName=salaryTxtBx, Path=Text}">
+        </local:Control>
 
 
         <Grid Background="#2B2A66">
@@ -122,7 +123,7 @@
 
             <TextBlock Grid.Row="1" Grid.Column="1" FontSize="20" FontFamily="/Fonts/#Cygre Medium" Foreground="White">Доход</TextBlock>
 
-            <TextBox Name="salaryTxtBx" Style="{StaticResource CustomTextBox}" Grid.Row="1" Grid.Column="1" Margin="0, 40, 0, 0" PreviewTextInput="salaryTxtBx_PreviewTextInput" PreviewKeyDown="salaryTxtBx_PreviewKeyDown"></TextBox>
+            <TextBox Name="salaryTxtBx" Style="{StaticResource CustomTextBox}" Grid.Row="1" Grid.Column="1" Margin="0, 40, 0, 0" PreviewTextInput="salaryTxtBx_PreviewTextInput" PreviewKeyDown="salaryTxtBx_PreviewKeyDown" TextChanged="salaryTxtBx_TextChanged"></TextBox>
         </Grid>
 
 
@@ -147,7 +148,7 @@
                     <Run Name="loan" FontSize="25" FontFamily="/Fonts/#Cygre Black">0</Run>
                 </TextBlock>
 
-                <Slider Name="slider" Style="{StaticResource Horizontal_Slider}" Margin="0, 10, 0, 0" Cursor="Hand" ValueChanged="slider_ValueChanged"></Slider>
+                <Slider Name="loanSldr" Style="{StaticResource Horizontal_Slider}" Margin="0, 10, 0, 0" Maximum="0" Cursor="Hand" ValueChanged="slider_ValueChanged"></Slider>
             </StackPanel>
         </Grid>
     </Grid>
