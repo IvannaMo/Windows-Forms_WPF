@@ -1,0 +1,21 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\bin\Debug\net7.0-windows\Loan Calculator.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\bin\Debug\net7.0-windows\Loan Calculator.deps.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\bin\Debug\net7.0-windows\Loan Calculator.runtimeconfig.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\bin\Debug\net7.0-windows\Loan Calculator.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\bin\Debug\net7.0-windows\Loan Calculator.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.csproj.AssemblyReference.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator_MarkupCompile.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator_MarkupCompile.lref
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.g.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.AssemblyInfoInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.AssemblyInfo.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.csproj.CoreCompileInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\refint\Loan Calculator.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\Loan Calculator.genruntimeconfig.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Loan Calculator\Loan Calculator\obj\Debug\net7.0-windows\ref\Loan Calculator.dll

@@ -1,0 +1,154 @@
+﻿<Window x:Class="Loan_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Loan_Calculator"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Loan Calculator" Height="187" Width="438">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}" x:Key="CustomTextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border CornerRadius="7" Background="#42428C">
+                            <Grid>
+                                <Rectangle StrokeThickness="1"/>
+                                <TextBox Margin="1" Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Text, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" Padding="5" Foreground="#A9AFEA" FontFamily="/Fonts/#Cygre Medium" FontSize="20" x:Name="InputBox"/>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        
+        <Style x:Key="SliderRepeatButton" TargetType="RepeatButton">
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="OverridesDefaultStyle" Value="true" />
+            <Setter Property="IsTabStop" Value="false" />
+            <Setter Property="Focusable" Value="false" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Border BorderThickness="0" Background="#42428C" Height="4"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SliderRepeatButton1" TargetType="RepeatButton">
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="OverridesDefaultStyle" Value="true" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Border SnapsToDevicePixels="True" Background="#4E52A5" Height="4"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SliderThumb" TargetType="Thumb">
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="OverridesDefaultStyle" Value="true" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Thumb">
+                        <Ellipse Height="15" Width="15" Fill="#4E52A5"></Ellipse>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <ControlTemplate x:Key="Slider"  TargetType="Slider">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" MinHeight="{TemplateBinding MinHeight}" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Track Grid.Row="1" x:Name="PART_Track"   >
+                    <Track.DecreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource SliderRepeatButton1}"  Command="Slider.DecreaseLarge" />
+                    </Track.DecreaseRepeatButton>
+                    <Track.Thumb>
+                        <Thumb Style="{StaticResource SliderThumb}"  />
+                    </Track.Thumb>
+                    <Track.IncreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource SliderRepeatButton}" Command="Slider.IncreaseLarge" />
+                    </Track.IncreaseRepeatButton>
+                </Track>
+            </Grid>
+        </ControlTemplate>
+
+        <Style x:Key="Horizontal_Slider" TargetType="Slider">
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="OverridesDefaultStyle" Value="true" />
+            <Style.Triggers>
+                <Trigger Property="Orientation" Value="Horizontal">
+                    <Setter Property="MinHeight" Value="21" />
+                    <Setter Property="MinWidth" Value="104" />
+                    <Setter Property="Template" Value="{StaticResource Slider}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#191C47">
+        <local:Property x:Name="customControl" Data="{Binding ElementName=salaryTxtBx}"/>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38.36*"></ColumnDefinition>
+            <ColumnDefinition Width="61.64*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Background="#2B2A66">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="18.72*"></RowDefinition>
+                <RowDefinition Height="72"></RowDefinition>
+                <RowDefinition Height="40.11*"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="20"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <TextBlock Grid.Row="1" Grid.Column="1" FontSize="20" FontFamily="/Fonts/#Cygre Medium" Foreground="White">Доход</TextBlock>
+
+            <TextBox Name="salaryTxtBx" Style="{StaticResource CustomTextBox}" Grid.Row="1" Grid.Column="1" Margin="0, 40, 0, 0" PreviewTextInput="salaryTxtBx_PreviewTextInput" PreviewKeyDown="salaryTxtBx_PreviewKeyDown"></TextBox>
+        </Grid>
+
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="18.72*"></RowDefinition>
+                <RowDefinition Height="57.22*"></RowDefinition>
+                <RowDefinition Height="24.06*"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31"></ColumnDefinition>
+                <ColumnDefinition Width="76.95*"></ColumnDefinition>
+                <ColumnDefinition Width="31"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <TextBlock HorizontalAlignment="Center" FontSize="20" FontFamily="/Fonts/#Cygre Medium" Foreground="White">Размер кредита</TextBlock>
+                <TextBlock HorizontalAlignment="Center" Margin="0, 5, 0, 0" Foreground="White">
+                    <Run FontSize="20" FontFamily="/Fonts/#Cygre Medium">₴</Run>
+                    <Run Name="loan" FontSize="25" FontFamily="/Fonts/#Cygre Black">0</Run>
+                </TextBlock>
+
+                <Slider Name="slider" Style="{StaticResource Horizontal_Slider}" Margin="0, 10, 0, 0" Cursor="Hand" ValueChanged="slider_ValueChanged"></Slider>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
