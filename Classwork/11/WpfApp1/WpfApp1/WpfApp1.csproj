@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Axiforma-Black.ttf" />
+    <None Remove="Fonts\Axiforma-Bold.ttf" />
+    <None Remove="Fonts\Axiforma-Medium.ttf" />
+    <None Remove="Fonts\Axiforma-Regular.ttf" />
+    <None Remove="Fonts\Axiforma-SemiBold.ttf" />
+    <None Remove="Images\Illustration.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Axiforma-Black.ttf" />
+    <Resource Include="Fonts\Axiforma-Bold.ttf" />
+    <Resource Include="Fonts\Axiforma-Medium.ttf" />
+    <Resource Include="Fonts\Axiforma-Regular.ttf" />
+    <Resource Include="Fonts\Axiforma-SemiBold.ttf" />
+    <Resource Include="Images\Illustration.jpg" />
+  </ItemGroup>
+
+</Project>
