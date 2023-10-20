@@ -1,0 +1,51 @@
+﻿<Window x:Class="LangResources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LangResources"
+        xmlns:res="clr-namespace:LangResources.Resources"
+        mc:Ignorable="d"
+        Title="MainWindow" SizeToContent="Height" Width="315" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="7"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="7"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="7"></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition Height="7"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="7"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="7"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <TextBlock Name="nameTxtBlck" Grid.Row="1" Grid.Column="1" Margin="0, 0, 7, 0" VerticalAlignment="Center" Text="{x:Static res:lang.NameTxtBlck}"/>
+        <TextBox Name="nameTxtBx"  Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="4"/>
+
+        <TextBlock Name="surnameTxtBlck" Grid.Row="3" Grid.Column="1" Margin="0, 0, 7, 0" VerticalAlignment="Center" Text="{x:Static res:lang.SurnameTxtBlck}"/>
+        <TextBox Name="surnameTxtBx" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="4"/>
+
+        <TextBlock Name="phoneTxtBlck" Grid.Row="5" Grid.Column="1" Margin="0, 0, 7, 0" VerticalAlignment="Center" Text="{x:Static res:lang.PhoneTxtBlck}"/>
+        <TextBox Name="phoneTxtBx" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="4"/>
+
+
+        <Button Name="okBttn" Grid.Row="7" Grid.Column="3" Padding="30, 0, 30, 0" Content="{x:Static res:lang.OkBttn}" Cursor="Hand"/>
+        <Button Name="cancelBttn" Grid.Row="7" Grid.Column="5" Padding="20, 0, 20, 0" Content="{x:Static res:lang.CancelBttn}" Cursor="Hand"/>
+
+        <Button Name="changeLangBttn" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="5" Content="{x:Static res:lang.ChangeLangBttn}" Cursor="Hand" Click="Button_Click"/>
+    </Grid>
+</Window>

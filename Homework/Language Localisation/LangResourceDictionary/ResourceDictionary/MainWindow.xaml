@@ -1,0 +1,50 @@
+﻿<Window x:Class="LangResourceDictionary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LangResourceDictionary"
+        mc:Ignorable="d"
+        Title="MainWindow" SizeToContent="Height" Width="315" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="7"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="7"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="7"></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition Height="7"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="7"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="7"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Margin="0, 0, 7, 0" VerticalAlignment="Center" Text="{DynamicResource NameTxtBlck}"/>
+        <TextBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="4"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="1" Margin="0, 0, 7, 0" VerticalAlignment="Center" Text="{DynamicResource SurnameTxtBlck}"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="4"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="1" Margin="0, 0, 7, 0" VerticalAlignment="Center" Text="{DynamicResource PhoneTxtBlck}"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="4"/>
+
+
+        <Button Grid.Row="7" Grid.Column="3" Padding="30, 0, 30, 0" Content="{DynamicResource OkBttn}" Cursor="Hand"/>
+        <Button Grid.Row="7" Grid.Column="5" Padding="20, 0, 20, 0" Content="{DynamicResource CancelBttn}" Cursor="Hand"/>
+
+        <Button Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="5" Content="{DynamicResource ChangeLangBttn}" Cursor="Hand" Click="Button_Click"/>
+    </Grid>
+</Window>
