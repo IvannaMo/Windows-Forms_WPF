@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>Calculator_pt._2</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Images\**" />
+    <Page Remove="Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Ano-Regular.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Ano-Regular.otf" />
+  </ItemGroup>
+
+</Project>

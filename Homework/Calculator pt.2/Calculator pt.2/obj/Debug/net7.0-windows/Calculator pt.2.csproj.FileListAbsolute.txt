@@ -1,0 +1,21 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\bin\Debug\net7.0-windows\Calculator pt.2.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\bin\Debug\net7.0-windows\Calculator pt.2.deps.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\bin\Debug\net7.0-windows\Calculator pt.2.runtimeconfig.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\bin\Debug\net7.0-windows\Calculator pt.2.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\bin\Debug\net7.0-windows\Calculator pt.2.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2.csproj.AssemblyReference.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2_MarkupCompile.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2_MarkupCompile.lref
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2.g.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2.AssemblyInfoInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2.AssemblyInfo.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2.csproj.CoreCompileInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\refint\Calculator pt.2.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\Calculator pt.2.genruntimeconfig.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Calculator pt.2\Calculator pt.2\obj\Debug\net7.0-windows\ref\Calculator pt.2.dll
