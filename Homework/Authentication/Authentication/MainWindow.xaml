@@ -1,0 +1,124 @@
+﻿<Window x:Class="Authentication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Authentication"
+        mc:Ignorable="d"
+        Title="Authentication" Height="148" Width="290" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="inputTxtBx" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border CornerRadius="5" BorderThickness="0, 2, 0, 2" BorderBrush="#AFAFAF" Background="#696969">
+                            <Grid>
+                                <TextBox Padding="4, 0, 0, 4" Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Text, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" Foreground="White"/>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <Style x:Key="customChckBx" TargetType="CheckBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="CheckBox">
+                        <Border Name="customChckBxBorder" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Height, UpdateSourceTrigger=PropertyChanged}" Width="{Binding ElementName=customChckBxBorder, Path=Height}" CornerRadius="2" BorderThickness="2" BorderBrush="#AFAFAF" Background="#696969">
+                            <Grid>
+                                <Border Name="customChckBxChecked" Margin="1" CornerRadius="1" Background="#AFAFAF" Visibility="Hidden"/>
+                            </Grid>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="customChckBxChecked" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <Style x:Key="logInBttn" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="customBttnBorder" CornerRadius="11" Background="#32CD32" TextBlock.Foreground="White">
+                            <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <ContentPresenter RecognizesAccessKey="True" Margin="{TemplateBinding Padding}"/>
+                            </Grid>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="customBttnBorder" Property="Background" Value="#4fe14f"/>
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="customBttnBorder" Property="Background" Value="#6bed59"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="cancelBttn" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="customBttnBorder" CornerRadius="11" Background="#dc143c" TextBlock.Foreground="White">
+                            <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <ContentPresenter RecognizesAccessKey="True" Margin="{TemplateBinding Padding}"/>
+                            </Grid>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="customBttnBorder" Property="Background" Value="#ee2444"/>
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="customBttnBorder" Property="Background" Value="#f5334a"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#333333">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="27"></RowDefinition>
+            <RowDefinition Height="27"></RowDefinition>
+            <RowDefinition Height="0.18*"></RowDefinition>
+            <RowDefinition Height="28"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="65"></ColumnDefinition>
+            <ColumnDefinition Width="75"></ColumnDefinition>
+            <ColumnDefinition Width="75"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <TextBlock Margin="5, 7, 0, 0" Foreground="White">Username:</TextBlock>
+        <TextBox Name="usernameTxtBx" Grid.Column="1" Grid.ColumnSpan="3" Margin="0, 5, 5, 0" Style="{StaticResource inputTxtBx}"/>
+
+        <TextBlock Grid.Row="1" Margin="5, 7, 0, 0" Foreground="White">Password:</TextBlock>
+        <TextBox Name="passwordTxtbx" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Margin="0, 5, 5, 0" Style="{StaticResource inputTxtBx}"/>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalAlignment="Center">
+            <CheckBox Name="rememberMeChckbx" Grid.ColumnSpan="2" Height="12" Style="{StaticResource customChckBx}" Cursor="Hand"></CheckBox>
+            <TextBlock Foreground="White" Margin="4, 0, 0, 0">Remember Me</TextBlock>
+        </StackPanel>
+
+        <Button Name="logInBttn" Grid.Row="3" Grid.Column="1" Margin="0, 0, 5, 5" Style="{StaticResource logInBttn}" Cursor="Hand">Log In</Button>
+        <Button Name="cancelBttn" Grid.Row="3" Grid.Column="2" Margin="0, 0, 5, 5" Style="{StaticResource cancelBttn}" Cursor="Hand">Cancel</Button>
+    </Grid>
+</Window>
