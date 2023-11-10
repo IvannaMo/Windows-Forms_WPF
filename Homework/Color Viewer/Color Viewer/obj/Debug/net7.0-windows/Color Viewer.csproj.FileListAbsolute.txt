@@ -1,0 +1,21 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\bin\Debug\net7.0-windows\Color Viewer.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\bin\Debug\net7.0-windows\Color Viewer.deps.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\bin\Debug\net7.0-windows\Color Viewer.runtimeconfig.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\bin\Debug\net7.0-windows\Color Viewer.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\bin\Debug\net7.0-windows\Color Viewer.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer.csproj.AssemblyReference.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Views\MainWindow.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer_MarkupCompile.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer_MarkupCompile.lref
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Views\MainWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer.g.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer.AssemblyInfoInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer.AssemblyInfo.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer.csproj.CoreCompileInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\refint\Color Viewer.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\Color Viewer.genruntimeconfig.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Color Viewer\Color Viewer\obj\Debug\net7.0-windows\ref\Color Viewer.dll
