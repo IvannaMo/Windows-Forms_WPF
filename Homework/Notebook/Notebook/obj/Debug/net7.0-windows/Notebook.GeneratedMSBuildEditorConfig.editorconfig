@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Notebook
 build_property.ProjectDir = C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -66,8 +66,8 @@
         </Grid.ColumnDefinitions>
 
 
-        <ListBox Background="#805a46" BorderBrush="#644433" BorderThickness="4">
-
+        <ListBox Background="#805a46" BorderBrush="#644433" BorderThickness="4" 
+                 ItemsSource="{Binding Contacts}" SelectedItem="{Binding SelectedContact}" FontFamily="/Fonts/#Axiforma" FontSize="17" Foreground="White">
         </ListBox>
 
 
@@ -122,23 +122,23 @@
 
 
                         <TextBlock Grid.Row="1" Grid.Column="1" Style="{StaticResource inpuntInfoTxtBlck}">ФИО:</TextBlock>
-                        <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource inputTxtBx}"></TextBox>
+                        <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource inputTxtBx}" Text="{Binding FullName, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                         
                         <TextBlock Grid.Row="5" Grid.Column="1" Style="{StaticResource inpuntInfoTxtBlck}">Адрес:</TextBlock>
-                        <TextBox Grid.Row="7" Grid.Column="1" Style="{StaticResource inputTxtBx}"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="1" Style="{StaticResource inputTxtBx}" Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                         
                         <TextBlock Grid.Row="9" Grid.Column="1" Style="{StaticResource inpuntInfoTxtBlck}">Телефон:</TextBlock>
-                        <TextBox Grid.Row="11" Grid.Column="1" Style="{StaticResource inputTxtBx}"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="1" Style="{StaticResource inputTxtBx}" Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                     </Grid>
                 </Border>
 
 
-                <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource contactBttn}" Command="{Binding}">Добавить</Button>
-                <Button Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource contactBttn}">Удалить</Button>
-                <Button Grid.Row="3" Grid.Column="7" Style="{StaticResource contactBttn}">Изменить</Button>
+                <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource contactBttn}" Command="{Binding AddPerson}">Добавить</Button>
+                <Button Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource contactBttn}" Command="{Binding DeletePerson}">Удалить</Button>
+                <Button Grid.Row="3" Grid.Column="7" Style="{StaticResource contactBttn}" Command="{Binding EditPerson}">Изменить</Button>
 
-                <Button Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource fileBttn}">Сохранить в файл</Button>
-                <Button Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource fileBttn}">Загрузить из файла</Button>
+                <Button Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource fileBttn}" Command="{Binding SaveContacts}">Сохранить в файл</Button>
+                <Button Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource fileBttn}" Command="{Binding LoadContacts}">Загрузить из файла</Button>
             </Grid>
         </Border>
     </Grid>

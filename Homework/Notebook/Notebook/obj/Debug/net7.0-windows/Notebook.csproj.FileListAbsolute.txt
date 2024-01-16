@@ -3,7 +3,6 @@ C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\No
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\bin\Debug\net7.0-windows\Notebook.runtimeconfig.json
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\bin\Debug\net7.0-windows\Notebook.dll
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\bin\Debug\net7.0-windows\Notebook.pdb
-C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\obj\Debug\net7.0-windows\Notebook.csproj.AssemblyReference.cache
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\obj\Debug\net7.0-windows\App.g.cs
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\obj\Debug\net7.0-windows\Notebook_MarkupCompile.cache
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\obj\Debug\net7.0-windows\Notebook_MarkupCompile.lref
@@ -19,3 +18,5 @@ C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\No
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\obj\Debug\net7.0-windows\ref\Notebook.dll
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\obj\Debug\net7.0-windows\Views\MainWindow.g.cs
 C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\obj\Debug\net7.0-windows\Views\MainWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Notebook\Notebook\obj\Debug\net7.0-windows\Notebook.sourcelink.json

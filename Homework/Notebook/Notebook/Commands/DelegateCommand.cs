@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace Notebook.Commands
 {
-    class DelegateCommand
+    class DelegateCommand : ICommand
     {
         Action<object> _execute;
         Predicate<object> _canExecute;
@@ -35,11 +35,11 @@ namespace Notebook.Commands
             return true;
         }
 
-
         public void Execute(object parameter)
         {
             _execute(parameter);
         }
+
 
         public event EventHandler CanExecuteChanged
         {
