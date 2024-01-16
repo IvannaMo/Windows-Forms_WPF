@@ -1,0 +1,21 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game_MarkupCompile.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game_MarkupCompile.lref
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\bin\Debug\net7.0-windows\2048 Game.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\bin\Debug\net7.0-windows\2048 Game.deps.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\bin\Debug\net7.0-windows\2048 Game.runtimeconfig.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\bin\Debug\net7.0-windows\2048 Game.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\bin\Debug\net7.0-windows\2048 Game.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game.g.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game.AssemblyInfoInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game.AssemblyInfo.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game.csproj.CoreCompileInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game.sourcelink.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\refint\2048 Game.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\2048 Game.genruntimeconfig.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\2048 Game\2048 Game\obj\Debug\net7.0-windows\ref\2048 Game.dll

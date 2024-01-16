@@ -5,14 +5,110 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2048_Game"
         mc:Ignorable="d"
-        Title="2048" Height="450" Width="800">
-    <Grid>
+        Title="2048" 
+        Height="500" Width="330"
+        KeyDown="WindowKeyDown">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="Background" Value="#eee4da"/>
+            <Setter Property="Foreground" Value="#776e65"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontFamily" Value="/Fonts/#Clear Sans"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Label">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <Style x:Key="newGameButton" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Foreground" Value="#f9f6f2"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="/Fonts/#Clear Sans"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="#8f7a66" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#faf8ef">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="110"/>
+            <ColumnDefinition Width="95"/>
+            <ColumnDefinition Width="95"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="2" Grid.Row="1" Margin="5" Background="#bbada0" CornerRadius="5">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ede2d6" FontFamily="/Fonts/#Clear Sans" FontSize="15">СЧЕТ</TextBlock>
+                <TextBlock Name="score" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff" FontFamily="/Fonts/#Clear Sans" FontSize="25">0</TextBlock>
+            </Grid>
+        </Border>
+
+        <Border Grid.Column="3" Grid.Row="1" Margin="5" Background="#bbada0" CornerRadius="5">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ede2d6" FontFamily="/Fonts/#Clear Sans" FontSize="15">ЛУЧШИЙ</TextBlock>
+                <TextBlock Name="highScore" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff" FontFamily="/Fonts/#Clear Sans" FontSize="25">0</TextBlock>
+            </Grid>
+        </Border>
+
+
+        <Border Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Margin="5" Background="#cdc1b4" CornerRadius="5">
+            <Grid Name="gameGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+            </Grid>
+        </Border>
+
+
+        <Button Name="restartButton" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource newGameButton}" Content="Новая Игра" Cursor="Hand" Click="RestartButtonClick"/>
     </Grid>
 </Window>

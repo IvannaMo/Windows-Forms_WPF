@@ -8,4 +8,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Fonts\ClearSans-Bold.ttf" />
+    <None Remove="Fonts\ClearSans-BoldItalic.ttf" />
+    <None Remove="Fonts\ClearSans-Italic.ttf" />
+    <None Remove="Fonts\ClearSans-Light.ttf" />
+    <None Remove="Fonts\ClearSans-Medium.ttf" />
+    <None Remove="Fonts\ClearSans-MediumItalic.ttf" />
+    <None Remove="Fonts\ClearSans-Regular.ttf" />
+    <None Remove="Fonts\ClearSans-Thin.ttf" />
+    <None Remove="Fonts\HelveticaNeue-Bold.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\ClearSans-Bold.ttf" />
+  </ItemGroup>
+
 </Project>
