@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Magic 8 ball\\Magic 8 ball\\Magic 8 ball.csproj": {}
+    "\\\\DELL\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Magic 8 ball\\Magic 8 ball\\Magic 8 ball.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Magic 8 ball\\Magic 8 ball\\Magic 8 ball.csproj": {
+    "\\\\DELL\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Magic 8 ball\\Magic 8 ball\\Magic 8 ball.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Magic 8 ball\\Magic 8 ball\\Magic 8 ball.csproj",
+        "projectUniqueName": "\\\\DELL\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Magic 8 ball\\Magic 8 ball\\Magic 8 ball.csproj",
         "projectName": "Magic 8 ball",
-        "projectPath": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Magic 8 ball\\Magic 8 ball\\Magic 8 ball.csproj",
+        "projectPath": "\\\\DELL\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Magic 8 ball\\Magic 8 ball\\Magic 8 ball.csproj",
         "packagesPath": "C:\\Users\\ivann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Magic 8 ball\\Magic 8 ball\\obj\\",
+        "outputPath": "\\\\DELL\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Magic 8 ball\\Magic 8 ball\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\ivann\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

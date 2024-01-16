@@ -1,0 +1,109 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Axiforma\Axiforma-Black.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-BlackItalic.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-Bold.otf" />
+    <None Remove="Fonts\Axiforma\Axiforma-Bold.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-BoldItalic.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-Book.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-BookItalic.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-ExtraBold.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-ExtraBoldItalic.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-Heavy.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-HeavyItalic.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-Italic.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-Light.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-LightItalic.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-Medium.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-MediumItalic.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-Regular.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-SemiBold.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-SemiBoldItalic.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-Thin.ttf" />
+    <None Remove="Fonts\Axiforma\Axiforma-ThinItalic.ttf" />
+    <None Remove="Icon.ico" />
+    <None Remove="Icons\Close Icon.png" />
+    <None Remove="Icons\FullScreen Icon.png" />
+    <None Remove="Icons\Icon.ico" />
+    <None Remove="Icons\Minimize Icon.png" />
+    <None Remove="Images\Authentication Image.jpg" />
+    <None Remove="Images\Close Icon.png" />
+    <None Remove="Images\Close Icon.svg" />
+    <None Remove="Images\Closed Frame.png" />
+    <None Remove="Images\Closed Frame.svg" />
+    <None Remove="Images\Default Photo.png" />
+    <None Remove="Images\Default Photo.svg" />
+    <None Remove="Images\Frame.png" />
+    <None Remove="Images\Frame.svg" />
+    <None Remove="Images\FullScreen Frame.png" />
+    <None Remove="Images\FullScreen Frame.svg" />
+    <None Remove="Images\FullScreen Icon.svg" />
+    <None Remove="Images\Logo.png" />
+    <None Remove="Images\Logo.svg" />
+    <None Remove="Images\Minimize Icon.png" />
+    <None Remove="Images\Test.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Axiforma\Axiforma-Black.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-BlackItalic.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-Bold.otf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-Bold.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-BoldItalic.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-Book.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-BookItalic.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-ExtraBold.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-ExtraBoldItalic.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-Heavy.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-HeavyItalic.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-Italic.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-Light.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-LightItalic.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-Medium.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-MediumItalic.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-Regular.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-SemiBold.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-SemiBoldItalic.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-Thin.ttf" />
+    <Resource Include="Fonts\Axiforma\Axiforma-ThinItalic.ttf" />
+    <Resource Include="Icon.ico" />
+    <Resource Include="Icons\Close Icon.png" />
+    <Resource Include="Icons\FullScreen Icon.png" />
+    <Resource Include="Icons\Minimize Icon.png" />
+    <Resource Include="Images\Authentication Image.jpg" />
+    <Resource Include="Images\Closed Frame.png" />
+    <Resource Include="Images\Default Photo.png" />
+    <Resource Include="Images\Frame.png" />
+    <Resource Include="Images\FullScreen Frame.png" />
+    <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\Test.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\SignUpWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

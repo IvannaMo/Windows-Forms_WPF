@@ -1,0 +1,24 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\bin\Debug\net7.0-windows\Ray Server.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\bin\Debug\net7.0-windows\Ray Server.deps.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\bin\Debug\net7.0-windows\Ray Server.runtimeconfig.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\bin\Debug\net7.0-windows\Ray Server.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\bin\Debug\net7.0-windows\Ray Server.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.csproj.AssemblyReference.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server_MarkupCompile.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server_MarkupCompile.lref
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.g.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.AssemblyInfoInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.AssemblyInfo.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.csproj.CoreCompileInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\refint\Ray Server.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.genruntimeconfig.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\ref\Ray Server.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Views\ServerWindow.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Views\ServerWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.csproj.CopyComplete
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Exam\Ray Server\Ray Server\obj\Debug\net7.0-windows\Ray Server.sourcelink.json

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Puzzle\\Puzzle\\Puzzle.csproj": {}
+    "\\\\DELL\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Puzzle\\Puzzle\\Puzzle.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Puzzle\\Puzzle\\Puzzle.csproj": {
+    "\\\\DELL\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Puzzle\\Puzzle\\Puzzle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Puzzle\\Puzzle\\Puzzle.csproj",
+        "projectUniqueName": "\\\\DELL\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Puzzle\\Puzzle\\Puzzle.csproj",
         "projectName": "Puzzle",
-        "projectPath": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Puzzle\\Puzzle\\Puzzle.csproj",
+        "projectPath": "\\\\DELL\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Puzzle\\Puzzle\\Puzzle.csproj",
         "packagesPath": "C:\\Users\\ivann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivann\\Pictures\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Puzzle\\Puzzle\\obj\\",
+        "outputPath": "\\\\DELL\\ITStep\\3 Курс\\Windows Forms. WPF. GitHub\\Homework\\Puzzle\\Puzzle\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\ivann\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

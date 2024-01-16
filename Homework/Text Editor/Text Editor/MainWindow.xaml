@@ -1,0 +1,39 @@
+﻿<Window x:Class="Text_Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Text_Editor"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="350" Width="520"
+        WindowStartupLocation="CenterScreen"
+        Loaded="WindowLoaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        
+        <Menu Height="Auto" Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Name="newMenuItem" Command="New"/>
+                <MenuItem Name="openMenuItem" Command="Open"/>
+                <MenuItem Name="saveMenuItem" Command="Save"/>
+                <Separator/>
+                <MenuItem Command="Close"/>
+            </MenuItem>
+
+            <MenuItem Header="Edit">
+                <MenuItem Name="cutMenuItem" Command="Cut"/>
+                <MenuItem Name="copyMenuItem" Command="Copy"/>
+                <MenuItem Name="pasteMenuItem" Command="Paste"/>
+            </MenuItem>
+
+            <MenuItem Header="Register" Click="MenuItemClick"/>
+        </Menu>
+
+        <TextBox Name="textBox" Grid.Row="1" Margin="5" TextWrapping="Wrap" FontSize="16" TextChanged="textBoxTextChanged"/>
+    </Grid>
+</Window>

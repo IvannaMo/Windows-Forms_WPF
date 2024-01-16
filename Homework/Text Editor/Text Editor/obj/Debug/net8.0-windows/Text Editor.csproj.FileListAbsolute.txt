@@ -1,0 +1,23 @@
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\bin\Debug\net8.0-windows\Text Editor.exe
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\bin\Debug\net8.0-windows\Text Editor.deps.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\bin\Debug\net8.0-windows\Text Editor.runtimeconfig.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\bin\Debug\net8.0-windows\Text Editor.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\bin\Debug\net8.0-windows\Text Editor.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\RegisterWindow.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor_MarkupCompile.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor_MarkupCompile.lref
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\RegisterWindow.baml
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor.g.resources
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor.AssemblyInfoInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor.AssemblyInfo.cs
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor.csproj.CoreCompileInputs.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor.sourcelink.json
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\refint\Text Editor.dll
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor.pdb
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\Text Editor.genruntimeconfig.cache
+C:\Users\ivann\Pictures\ITStep\3 Курс\Windows Forms. WPF. GitHub\Homework\Text Editor\Text Editor\obj\Debug\net8.0-windows\ref\Text Editor.dll

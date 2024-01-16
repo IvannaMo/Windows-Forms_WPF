@@ -1,0 +1,279 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:components="clr-namespace:Ray.Components">
+    <!--SignIn | SignUp-->
+    
+    <Style x:Key="authnImage" TargetType="Border">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Images/Authentication Image.jpg" Stretch="UniformToFill"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    
+    <Style x:Key="windowActionButton" TargetType="Image">
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+
+    <sys:Double x:Key="authnHeaderTextFontSize">46</sys:Double>
+
+    <Style x:Key="authnHeaderText" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="/Fonts/Axiforma/#Axiforma Bold"/>
+        <Setter Property="FontSize" Value="{DynamicResource authnHeaderTextFontSize}"/>
+        <Setter Property="Foreground" Value="{DynamicResource additional}"/>
+    </Style>
+
+
+    <sys:Double x:Key="authnMainTextFontSize">23</sys:Double>
+
+    <Style x:Key="authnMainText" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="/Fonts/Axiforma/#Axiforma Bold"/>
+        <Setter Property="FontSize" Value="{DynamicResource authnMainTextFontSize}"/>
+        <Setter Property="Foreground" Value="{DynamicResource text}"/>
+    </Style>
+
+
+    <Style x:Key="authnInputTextBox" TargetType="TextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Border CornerRadius="14" Background="{DynamicResource elements}">
+                        <Grid>
+                            <TextBox Padding="10, 7, 10, 2" Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Text, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" Foreground="{DynamicResource text}" FontSize="{DynamicResource authnMainTextFontSize}" FontFamily="/Fonts/Axiforma/#Axiforma Bold"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="authnInputPasswordBox" TargetType="components:CustomPasswordBox">
+        <Style.Resources>
+            <Style TargetType="Border">
+                <Setter Property="Padding" Value="10, 7, 10, 2"/>
+                <Setter Property="Background" Value="{DynamicResource elements}"/>
+                <Setter Property="CornerRadius" Value="14"/>
+            </Style>
+            <Style TargetType="PasswordBox">
+                <Setter Property="Foreground" Value="{DynamicResource text}"/>
+                <Setter Property="FontSize" Value="{DynamicResource authnMainTextFontSize}"/>
+                <Setter Property="FontFamily" Value="/Fonts/Axiforma/#Axiforma Bold"/>
+            </Style>
+        </Style.Resources>
+    </Style>
+
+
+    <sys:Double x:Key="authnButtonFontSize">23</sys:Double>
+
+    <Style x:Key="authnButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="authnButtonBorder" CornerRadius="14" Background="{DynamicResource additional}" TextBlock.FontSize="{DynamicResource authnButtonFontSize}" TextBlock.FontFamily="/Fonts/Axiforma/#Axiforma Bold" TextBlock.Foreground="#2E383C" Cursor="Hand">
+                        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <ContentPresenter RecognizesAccessKey="True" Margin="30, 14, 30, 8"/>
+                        </Grid>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="authnButtonBorder" Property="Background" Value="{DynamicResource hoverAdditional}"/>
+                        </Trigger>
+
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="authnButtonBorder" Property="Background" Value="{DynamicResource activeAdditional}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    
+    
+    <!--MainApp-->
+
+    <Style x:Key="mainAppScreenFrame" TargetType="Grid">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Images/Frame.png" Stretch="UniformToFill"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="mainAppScreenClosedFrame" TargetType="Grid">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Images/Closed Frame.png" Stretch="UniformToFill"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <sys:Double x:Key="streamButtonFontSize">33</sys:Double>
+
+    <Style x:Key="streamButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="streamButtonBorder" CornerRadius="26" Background="{DynamicResource additional}" TextBlock.FontSize="{DynamicResource streamButtonFontSize}" TextBlock.FontFamily="/Fonts/Axiforma/#Axiforma Bold" TextBlock.Foreground="{DynamicResource buttonText}" Cursor="Hand">
+                        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <ContentPresenter RecognizesAccessKey="True" Margin="46, 26, 46, 20"/>
+                        </Grid>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="streamButtonBorder" Property="Background" Value="{DynamicResource hoverAdditional}"/>
+                        </Trigger>
+
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="streamButtonBorder" Property="Background" Value="{DynamicResource activeAdditional}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="stopStreamButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="stopStreamButtonBorder" CornerRadius="26" Opacity="0.5" Background="{DynamicResource additional}" TextBlock.FontSize="{DynamicResource streamButtonFontSize}" TextBlock.FontFamily="/Fonts/Axiforma/#Axiforma Bold" TextBlock.Foreground="{DynamicResource buttonText}" Cursor="Hand">
+                        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <ContentPresenter RecognizesAccessKey="True" Margin="46, 26, 46, 20"/>
+                        </Grid>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="stopStreamButtonBorder" Property="Background" Value="{DynamicResource hoverAdditional}"/>
+                        </Trigger>
+
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="stopStreamButtonBorder" Property="Background" Value="{DynamicResource activeAdditional}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style x:Key="screenShareImage" TargetType="Border">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Images/Test.jpg" Stretch="UniformToFill"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    
+    <Style x:Key="mainAppBorderContainer" TargetType="Border">
+        <Setter Property="CornerRadius" Value="44"/>
+        <Setter Property="Background" Value="{DynamicResource containers}"/>
+    </Style>
+
+
+    <sys:Double x:Key="mainAppTitleTextFontSize">46</sys:Double>
+    
+    <Style x:Key="mainAppTitleText" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource additional}"/>
+        <Setter Property="FontSize" Value="{DynamicResource mainAppTitleTextFontSize}"/>
+        <Setter Property="FontFamily" Value="/Fonts/Axiforma/#Axiforma Bold"/>
+    </Style>
+
+
+    <sys:Double x:Key="mainAppSubtitleTextFontSize">33</sys:Double>
+
+    <Style x:Key="mainAppMainSubtitleText" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource mainText}"/>
+        <Setter Property="FontSize" Value="{DynamicResource mainAppSubtitleTextFontSize}"/>
+        <Setter Property="FontFamily" Value="/Fonts/Axiforma/#Axiforma Bold"/>
+    </Style>
+
+    <Style x:Key="mainAppSubtitleText" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource text}"/>
+        <Setter Property="FontSize" Value="{DynamicResource mainAppSubtitleTextFontSize}"/>
+        <Setter Property="FontFamily" Value="/Fonts/Axiforma/#Axiforma Bold"/>
+    </Style>
+
+
+    <sys:Double x:Key="mainAppTextFontSize">23</sys:Double>
+    
+    <Style x:Key="mainAppText" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource text}"/>
+        <Setter Property="FontSize" Value="{DynamicResource mainAppTextFontSize}"/>
+        <Setter Property="FontFamily" Value="/Fonts/Axiforma/#Axiforma Bold"/>
+    </Style>
+
+
+    <Style x:Key="mainAppUserIcon" TargetType="components:UserIcon">
+        <Style.Resources>
+            <Style TargetType="Border">
+                <Setter Property="BorderThickness" Value="3"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource text}"/>
+            </Style>
+            <Style TargetType="Image">
+                <Setter Property="Margin" Value="3"/>
+            </Style>
+        </Style.Resources>
+    </Style>
+
+    <Style x:Key="mainAppStreamerUserIcon" TargetType="components:UserIcon">
+        <Style.Resources>
+            <Style TargetType="Border">
+                <Setter Property="BorderThickness" Value="3"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource mainText}"/>
+            </Style>
+            <Style TargetType="Image">
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+        </Style.Resources>
+    </Style>
+
+
+    <Style x:Key="mainAppUsernameColor" TargetType="Border">
+        <Setter Property="BorderThickness" Value="3"/>
+        <Setter Property="BorderBrush" Value="#7a9296"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+    
+    <Style x:Key="mainAppInfoEdit" TargetType="TextBox">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="FontFamily" Value="/Fonts/Axiforma/#Axiforma Bold"/>
+    </Style>
+
+    <Style x:Key="mainAppUsernameEdit" TargetType="TextBox" BasedOn="{StaticResource mainAppInfoEdit}">
+        <Setter Property="FontSize" Value="{DynamicResource mainAppSubtitleTextFontSize}"/>
+        <Setter Property="Foreground" Value="{DynamicResource mainText}"/>
+    </Style>
+
+    <Style x:Key="mainAppBioEdit" TargetType="TextBox" BasedOn="{StaticResource mainAppInfoEdit}">
+        <Setter Property="FontSize" Value="{DynamicResource mainAppTextFontSize}"/>
+        <Setter Property="Foreground" Value="{DynamicResource text}"/>
+    </Style>
+
+
+    <Style x:Key="mainAppThemesToggle" TargetType="components:Toggle">
+        <Style.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="BorderThickness" Value="3"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource text}"/>
+            </Style>
+            <Style TargetType="Ellipse">
+                <Setter Property="Margin" Value="3"/>
+                <Setter Property="Fill" Value="{DynamicResource text}"/>
+            </Style>
+        </Style.Resources>
+    </Style>
+</ResourceDictionary>
