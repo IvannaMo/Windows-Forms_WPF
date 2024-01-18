@@ -118,7 +118,7 @@
                                     </Grid.ColumnDefinitions>
 
 
-                                    <Border Grid.RowSpan="3" Grid.ColumnSpan="3" Panel.ZIndex="0" Name="mainAppScreenImageBorder" CornerRadius="44">
+                                    <Border Name="mainAppScreenImageBorder" Grid.RowSpan="3" Grid.ColumnSpan="3" Panel.ZIndex="0" CornerRadius="44">
                                         <Border.Background>
                                             <ImageBrush x:Name="mainAppScreenImage" Stretch="Fill"/>
                                         </Border.Background>
@@ -142,7 +142,7 @@
 
                         <Border Name="mainAppBorderStreamContainer" Style="{StaticResource mainAppBorderContainer}" Margin="0, 0, 0, 24" Height="Auto">
                             <StackPanel Margin="36, 30, 36, 44">
-                                <TextBlock Style="{StaticResource mainAppTitleText}" Text="Stream"/>
+                                <TextBlock Style="{StaticResource mainAppTitleText}" Text="Stream 18.01.2024"/>
                                 <WrapPanel HorizontalAlignment="Left" Background="Transparent" Cursor="Hand">
                                     <components:UserIcon x:Name="mainAppStreamerUser" Style="{StaticResource mainAppStreamerUserIcon}" Source="/Images/Default Photo.png"></components:UserIcon>
                                     <StackPanel Margin="17, 0, 0, 0">

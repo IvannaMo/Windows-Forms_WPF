@@ -10,6 +10,8 @@ using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using System.Windows.Media.Imaging;
 
 namespace Ray_Server.ViewModels
 {
@@ -53,12 +55,16 @@ namespace Ray_Server.ViewModels
 
 
         private byte[] _stream;
+        private User _streamUser;
 
 
         public ServerViewModel()
         {
             UsersList = new List<User>();
             Message = "start server\r\n";
+
+            _stream = null;
+            _streamUser = null;
 
             WaitClientQuery();
         }
@@ -68,7 +74,8 @@ namespace Ray_Server.ViewModels
         {
             await Task.Run(() =>
             {
-                _ip = "127.0.0.1";
+                _ip = "192.168.0.201";
+                //_ip = "192.168.0.63";
                 _port = 7007;
 
                 EndPoint endPoint = new IPEndPoint(IPAddress.Parse(_ip), _port);
@@ -87,9 +94,12 @@ namespace Ray_Server.ViewModels
         {
             await Task.Run(() =>
             {
+                Socket listener;
+
+
                 while (true)
                 {
-                    Socket listener = _tcpSocket.Accept();
+                    listener = _tcpSocket.Accept();
 
 
                     byte[] buffer = new byte[1024];
@@ -126,11 +136,7 @@ namespace Ray_Server.ViewModels
                     {
                         int id = Convert.ToInt32(commandInfo[1]);
 
-                        string username = commandInfo[2];
-                        username = Regex.Replace(username, "<space>", " ");
-
-
-                        User user = UsersList.Where(user => user.Id == id && user.Username == username).First();
+                        User user = UsersList.Where(user => user.Id == id).First();
                         UsersList.Remove(user);
 
                         serverAnswer = "confirm";
@@ -140,49 +146,77 @@ namespace Ray_Server.ViewModels
                     {
                         int id = Convert.ToInt32(commandInfo[1]);
 
-                        string username = commandInfo[2];
-                        username = Regex.Replace(username, "<space>", " ");
-
-                        string bio = commandInfo[3];
-                        bio = Regex.Replace(bio, "<space>", " ");
-
-
-                        User user = new User(id, username, bio);
-
-
-                        List<User> tempUsers = new List<User>();
-                        foreach(User tempUser in UsersList)
-                        {
-                            tempUsers.Add(tempUser);
-                        }
-                        serverAnswer = System.Text.Json.JsonSerializer.Serialize(tempUsers);
-                        Message += "sendUsers " + user.ToString() + "\r\n";
+                        serverAnswer = System.Text.Json.JsonSerializer.Serialize(UsersList);
                     }
                     else if ((commandInfo[0] == "stream"))
                     {
-                        int id = Convert.ToInt32(commandInfo[1]);
+                        try
+                        {
+                            int id = Convert.ToInt32(commandInfo[1]);
+                            if (_streamUser == null)
+                            {
+                                _streamUser = UsersList.Where(user => user.Id == id).First();
+                                Message += "startStream " + _streamUser.ToString() + "\r\n";
+                            }
 
-                        string username = commandInfo[2];
-                        username = Regex.Replace(username, "<space>", " ");
-
-                        string bio = commandInfo[3];
-                        bio = Regex.Replace(bio, "<space>", " ");
+                            byte[] _streamCheck = Convert.FromBase64String(commandInfo[2]);
+                            _stream = _streamCheck;
 
 
-                        //_stream = Array.Empty<byte>();
-                        //_stream = commandInfo[1];
+                            //using (MemoryStream memory = new MemoryStream(_stream))
+                            //{
+                            //    BitmapImage bitmapImage = new BitmapImage();
+                            //    bitmapImage.BeginInit();
+                            //    bitmapImage.StreamSource = memory;
+                            //    bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                            //    bitmapImage.EndInit();
+
+
+                            //    BitmapEncoder encoder = new PngBitmapEncoder();
+                            //    encoder.Frames.Add(BitmapFrame.Create(bitmapImage));
+
+                            //    using (var fileStream = new FileStream("Test.bmp", System.IO.FileMode.Create))
+                            //    {
+                            //        encoder.Save(fileStream);
+                            //    }
+                            //}
+                            
+
+                            serverAnswer = "confirm";
+                        }
+                        catch (Exception ex)
+                        {
+                            //Message += "error " + ex.ToString() + "\r\n";
+                        }
+                    }
+                    else if ((commandInfo[0] == "stopStream"))
+                    {
+                        Message += "stopStream " + _streamUser.ToString() + "\r\n";
+
+                        _stream = null;
+                        _streamUser = null;
 
                         serverAnswer = "confirm";
                     }
-
+                    else if ((commandInfo[0] == "getStream"))
+                    {
+                        if (_stream != null)
+                        {
+                            serverAnswer = Convert.ToBase64String(_stream);
+                        }
+                        else
+                        {
+                            serverAnswer = "null";
+                        }
+                    }
 
 
                     listener.Send(Encoding.UTF8.GetBytes(serverAnswer));
-
-
-                    listener.Shutdown(SocketShutdown.Both);
-                    listener.Close();
                 }
+
+
+                //listener.Shutdown(SocketShutdown.Both);
+                //listener.Close();
             });
         }
     }

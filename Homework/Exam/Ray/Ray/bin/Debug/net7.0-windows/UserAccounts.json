@@ -16,5 +16,17 @@
     "username": "aaa",
     "bio": "Just a cat",
     "password": "1"
+  },
+  {
+    "id": 3928,
+    "username": "b",
+    "bio": "Just a cat",
+    "password": "1"
+  },
+  {
+    "id": 9567,
+    "username": "c",
+    "bio": "Just a cat",
+    "password": "1"
   }
 ]

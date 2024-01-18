@@ -165,7 +165,8 @@ namespace Ray.ViewModels
 
                 bool answer = false;
 
-                const string ip = "127.0.0.1";
+                const string ip = "192.168.0.201";
+                //const string ip = "192.168.0.63";
                 const int port = 7007;
 
 

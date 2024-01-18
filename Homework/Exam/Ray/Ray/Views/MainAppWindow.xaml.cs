@@ -34,6 +34,10 @@ using Cursors = System.Windows.Input.Cursors;
 using User = Ray.Models.User;
 using Point = System.Drawing.Point;
 using Microsoft.VisualBasic.Devices;
+using System.Collections;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Drawing.Imaging;
+using Newtonsoft.Json.Linq;
 
 
 namespace Ray.Views
@@ -42,7 +46,8 @@ namespace Ray.Views
     {
         private User myUser;
 
-        private const string _ip = "127.0.0.1";
+        private const string _ip = "192.168.0.201";
+        //private const string _ip = "192.168.0.63";
         private const int _port = 7007;
 
         private bool _settingsOpen;
@@ -80,6 +85,7 @@ namespace Ray.Views
 
 
             GetUsers();
+            GetStream();
         }
 
 
@@ -95,13 +101,7 @@ namespace Ray.Views
                 Socket tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
 
-                string usernameEdit = myUser.Username;
-                usernameEdit = Regex.Replace(usernameEdit, " ", "<space>");
-
-                string bioEdit = myUser.Bio;
-                bioEdit = Regex.Replace(bioEdit, " ", "<space>");
-
-                string message = $"logout {myUser.Id} {usernameEdit}";
+                string message = $"logout {myUser.Id}";
                 byte[] data = Encoding.UTF8.GetBytes(message);
 
 
@@ -227,10 +227,6 @@ namespace Ray.Views
             mainAppUsersList.Width = mainAppUsersStackPanel.Width;
 
 
-            //Resources["mainAppTitleTextFontSize"] = (double)(mainAppBorderMainContainer.ActualWidth * 9.6 / 100);
-            //Resources["mainAppSubtitleTextFontSize"] = (double)(mainAppBorderMainContainer.ActualWidth * 9.6 / 100);
-
-
             if (DataContext is ICloseable viewModel)
             {
                 viewModel.Close += () =>
@@ -297,6 +293,8 @@ namespace Ray.Views
                 mainAppScreen.BorderBrush = Application.Current.Resources["additional"] as SolidColorBrush;
                 mainAppScreen.BorderThickness = new Thickness(14);
 
+                mainAppScreenImageBorder.CornerRadius = new CornerRadius(0);
+
                 mainAppScrollViewer.SetValue(ScrollViewer.VerticalScrollBarVisibilityProperty, ScrollBarVisibility.Disabled);
                 _fullScreenOn = true;
             }
@@ -318,6 +316,8 @@ namespace Ray.Views
                 mainAppScreen.CornerRadius = new CornerRadius(44);
                 mainAppScreen.BorderBrush = Brushes.Transparent;
                 mainAppScreen.BorderThickness = new Thickness(0);
+
+                mainAppScreenImageBorder.CornerRadius = new CornerRadius(44);
 
                 mainAppScrollViewer.SetValue(ScrollViewer.VerticalScrollBarVisibilityProperty, ScrollBarVisibility.Hidden);
                 _fullScreenOn = false;
@@ -357,13 +357,13 @@ namespace Ray.Views
                     Socket tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
 
-                    string usernameEdit = myUser.Username;
-                    usernameEdit = Regex.Replace(usernameEdit, " ", "<space>");
+                    //string usernameEdit = myUser.Username;
+                    //usernameEdit = Regex.Replace(usernameEdit, " ", "<space>");
 
-                    string bioEdit = myUser.Bio;
-                    bioEdit = Regex.Replace(bioEdit, " ", "<space>");
+                    //string bioEdit = myUser.Bio;
+                    //bioEdit = Regex.Replace(bioEdit, " ", "<space>");
 
-                    string message = $"getUsers {myUser.Id} {usernameEdit} {bioEdit}";
+                    string message = $"getUsers {myUser.Id}";
                     byte[] data = Encoding.UTF8.GetBytes(message);
 
 
@@ -433,6 +433,76 @@ namespace Ray.Views
         }
 
 
+        private async void GetStream()
+        {
+            while (true)
+            {
+                await Task.Delay(50);
+                Application.Current.Dispatcher.Invoke(new Action(async () =>
+                {
+                    try
+                    {
+                        if (!_isStreaming)
+                        {
+                            EndPoint endPoint = new IPEndPoint(IPAddress.Parse(_ip), _port);
+
+                            Socket tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+
+                            string message = $"getStream {myUser.Id}";
+                            byte[] data = Encoding.UTF8.GetBytes(message);
+
+
+                            tcpSocket.Connect(endPoint);
+                            tcpSocket.Send(data);
+
+
+                            byte[] buffer = new byte[1024];
+                            int size = 0;
+                            StringBuilder answerData = new StringBuilder();
+                            do
+                            {
+                                size = tcpSocket.Receive(buffer);
+                                answerData.Append(Encoding.UTF8.GetString(buffer, 0, size));
+                            } while (tcpSocket.Available > 0);
+
+
+                            if (answerData.ToString() == "null")
+                            {
+                                mainAppStreamButton.Visibility = Visibility.Visible;                          
+                                mainAppScreenImage.ImageSource = null;
+                            }
+                            else
+                            {
+                                byte[] bytes = Convert.FromBase64String(answerData.ToString());
+
+                                using (MemoryStream memory = new MemoryStream(bytes))
+                                {
+                                    BitmapImage bitmapImage = new BitmapImage();
+                                    bitmapImage.BeginInit();
+                                    bitmapImage.StreamSource = memory;
+                                    bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                                    bitmapImage.EndInit();
+
+                                    mainAppStreamButton.Visibility = Visibility.Hidden;
+                                    mainAppScreenImage.ImageSource = bitmapImage;
+                                }
+                            }
+
+
+                            tcpSocket.Shutdown(SocketShutdown.Both);
+                            tcpSocket.Close();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        //MessageBox.Show(ex.Message);
+                    }
+                }));
+            }
+        }
+
+
         private async void Record()
         {
             while (_isStreaming)
@@ -448,74 +518,113 @@ namespace Ray.Views
 
                             using (MemoryStream memory = new MemoryStream())
                             {
-                                bitmap.Save(memory, System.Drawing.Imaging.ImageFormat.Bmp);
-                                memory.Position = 0;
-                                BitmapImage bitmapImage = new BitmapImage();
-                                bitmapImage.BeginInit();
-                                bitmapImage.StreamSource = memory;
-                                bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
-                                bitmapImage.EndInit();
-
-                                mainAppScreenImage.ImageSource = bitmapImage;
-
-                                byte[] bytes = memory.ToArray();
-
-
-                                bool answer = false;
-
-
-                                EndPoint endPoint = new IPEndPoint(IPAddress.Parse(_ip), _port);
-
-                                Socket tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-
-
-                                string usernameEdit = myUser.Username;
-                                usernameEdit = Regex.Replace(usernameEdit, " ", "<space>");
-
-                                string bioEdit = myUser.Bio;
-                                bioEdit = Regex.Replace(bioEdit, " ", "<space>");
-
-                                string message = $"stream {myUser.Id} {usernameEdit} {bioEdit}";
-                                byte[] data = Encoding.UTF8.GetBytes(message);
-
-
-                                tcpSocket.Connect(endPoint);
-                                tcpSocket.Send(data);
-
-
-                                byte[] buffer = new byte[1024];
-                                int size = 0;
-                                StringBuilder answerData = new StringBuilder();
-                                do
+                                try
                                 {
-                                    size = tcpSocket.Receive(buffer);
-                                    answerData.Append(Encoding.UTF8.GetString(buffer, 0, size));
-                                } while (tcpSocket.Available > 0);
+                                    bitmap.Save(memory, System.Drawing.Imaging.ImageFormat.Bmp);
+                                    memory.Position = 0;
+                                    BitmapImage bitmapImage = new BitmapImage();
+                                    bitmapImage.BeginInit();
+                                    bitmapImage.StreamSource = memory;
+                                    bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                                    bitmapImage.EndInit();
 
-                                if (answerData.ToString() == "confirm")
-                                {
-                                    answer = true;
+
+                                    mainAppScreenImage.ImageSource = bitmapImage;
+
+                                    byte[] bytes = memory.ToArray();
+
+
+                                    bool answer = false;
+
+
+                                    EndPoint endPoint = new IPEndPoint(IPAddress.Parse(_ip), _port);
+
+                                    Socket tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                                    ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
+
+                                    string message = $"stream {myUser.Id} {Convert.ToBase64String(bytes)}";
+                                    byte[] data = Encoding.UTF8.GetBytes(message);
+
+
+                                    tcpSocket.Connect(endPoint);
+                                    tcpSocket.Send(data);
+
+
+                                    byte[] buffer = new byte[1024];
+                                    int size = 0;
+                                    StringBuilder answerData = new StringBuilder();
+                                    do
+                                    {
+                                        size = tcpSocket.Receive(buffer);
+                                        answerData.Append(Encoding.UTF8.GetString(buffer, 0, size));
+                                    } while (tcpSocket.Available > 0);
+
+                                    if (answerData.ToString() == "confirm")
+                                    {
+                                        answer = true;
+                                    }
+
+
+                                    tcpSocket.Shutdown(SocketShutdown.Both);
+                                    tcpSocket.Close();
                                 }
-
-
-                                tcpSocket.Shutdown(SocketShutdown.Both);
-                                tcpSocket.Close();
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show(ex.ToString());
+                                }
+                                
                             }
                         }
                     }
                 }));
             }
 
+
             mainAppScreenImage.ImageSource = null;
+
+            bool answer = false;
+
+
+            EndPoint endPoint = new IPEndPoint(IPAddress.Parse(_ip), _port);
+
+            Socket tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+
+            string message = $"stopStream {myUser.Id}"; 
+            byte[] data = Encoding.UTF8.GetBytes(message);
+
+
+            tcpSocket.Connect(endPoint);
+            tcpSocket.Send(data);
+
+
+            byte[] buffer = new byte[1024];
+            int size = 0;
+            StringBuilder answerData = new StringBuilder();
+            do
+            {
+                size = tcpSocket.Receive(buffer);
+                answerData.Append(Encoding.UTF8.GetString(buffer, 0, size));
+            } while (tcpSocket.Available > 0);
+
+            if (answerData.ToString() == "confirm")
+            {
+                answer = true;
+            }
+
+
+            tcpSocket.Shutdown(SocketShutdown.Both);
+            tcpSocket.Close();
         }
+
 
         private void mainAppStreamButtonClick(object sender, RoutedEventArgs e)
         {
             if (!_isStreaming)
             {
-                mainAppScreen.Background = Brushes.Transparent;
+                //mainAppScreen.Background = Brushes.Transparent;
                 mainAppScreenFrame.Style = (Style)FindResource("mainAppScreenFrame");
-                mainAppScreenImageBorder.CornerRadius = new CornerRadius(44);
 
                 mainAppStreamButton.Visibility = Visibility.Hidden;
                 mainAppStopButtonWrapPanel.Visibility = Visibility.Visible;
@@ -526,9 +635,8 @@ namespace Ray.Views
             }
             else
             {
-                mainAppScreen.Background = Application.Current.Resources["screen"] as SolidColorBrush;
+                //mainAppScreen.Background = Application.Current.Resources["screen"] as SolidColorBrush;
                 mainAppScreenFrame.Style = (Style)FindResource("mainAppScreenClosedFrame");
-                mainAppScreenImageBorder.CornerRadius = new CornerRadius(0);
 
                 mainAppStreamButton.Visibility = Visibility.Visible;
                 mainAppStopButtonWrapPanel.Visibility = Visibility.Hidden;
